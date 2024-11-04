@@ -9,3 +9,31 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.slide-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  /* block-size: 40px; */
+}
+
+.text {
+  position: relative;
+  font-family: tahoma;
+  font-size: 25px;
+  opacity: 0;
+  top: 40px;
+  font-weight: bold;
+  animation: slideUp ease 0.4s forwards;
+}
+
+@keyframes slideUp {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 0 -40px;
+    opacity: 1;
+  }
+}
