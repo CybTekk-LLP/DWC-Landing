@@ -10,13 +10,19 @@ class Carousel extends HTMLElement {
             <div class="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./images/1.png" alt="Image 1">
+                        <img src="./images/1.png" alt="Plants and Machinery>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/2.png" alt="Image 2">
+                        <img src="./images/2.png" alt="Plants and Machinery>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/3.png" alt="Image 3">
+                        <img src="./images/3.png" alt="Plants and Machinery>
+                    </div>
+                     <div class="carousel-item">
+                        <img src="./images/3.png" alt="Plants and Machinery>
+                    </div>
+                     <div class="carousel-item">
+                        <img src="./images/3.png" alt="Plants and Machinery>
                     </div>
                 </div>
                 <button class="prev">&#10094;</button>
@@ -29,53 +35,48 @@ class Carousel extends HTMLElement {
         // Style definitions
         const style = document.createElement("style");
         style.textContent = `
-            .carousel {
-                position: relative;
-                width: 100%;
-                max-width: 700px;
-                margin: auto;
-                overflow: hidden;
-                 border-radius: 35px;
-            }
+               .carousel {
+            position: relative;
+            inline-size: 100%;
+            max-inline-size: 700px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 35px;
+        }
 
-            .carousel img {
-                width: 100%;
-                display: block;
-            }
+        .carousel img {
+            inline-size: 100%;
+            display: block;
+        }
 
-            .carousel-item {
-                min-width: 100%;
-                box-sizing: border-box;
-                border-radius:10px
+        .carousel-item {
+            min-inline-size: 100%;
+            box-sizing: border-box;
+        }
 
-            }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
 
-            .carousel-inner {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-                
-            }
+        button.prev,
+        button.next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
 
-            button.prev,
-            button.next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: none;
-                border: none;
-                cursor: pointer;
-                color: white;
-                font-size: 24px; /* Adjust size as needed */
-                z-index: 1; /* Ensure buttons are on top */
-            }
+        button.prev {
+            inset-inline-start: 10px;
+        }
 
-            button.prev {
-                left: 10px;
-            }
-
-            button.next {
-                right: 10px;
-            }`;
+        button.next {
+            inset-inline-end: 10px;
+        }`;
 
         // Append styles and carousel to shadow DOM
         shadow.appendChild(style);
