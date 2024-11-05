@@ -1,4 +1,4 @@
-class InfrastructureComponent extends HTMLElement {
+export class InfrastructureComponent extends HTMLElement {
   constructor() {
     super();
 

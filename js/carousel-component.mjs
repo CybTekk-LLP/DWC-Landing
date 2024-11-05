@@ -1,4 +1,4 @@
-class Carousel extends HTMLElement {
+export class Carousel extends HTMLElement {
     constructor() {
         super();
 

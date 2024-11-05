@@ -1,4 +1,4 @@
-class DwcProjectCard extends HTMLElement {
+export class DwcProjectCard extends HTMLElement {
   constructor() {
     super();
 
