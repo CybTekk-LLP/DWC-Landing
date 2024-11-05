@@ -1,28 +1,28 @@
-class AnimatedCard extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+export class AnimatedCard extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    static get observedAttributes() {
-        return ['reverse', 'text', 'image-src', 'animate'];
-    }
+  static get observedAttributes() {
+    return ["reverse", "text", "image-src", "animate"];
+  }
 
-    attributeChangedCallback(name, oldValue, newValue) {
-        this.render();
-    }
+  attributeChangedCallback(name, oldValue, newValue) {
+    this.render();
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        const reverse = this.hasAttribute('reverse');
-        const animate = this.hasAttribute('animate');
-        const text = this.getAttribute('text') || '';
-        const imageSrc = this.getAttribute('image-src') || '';
+  render() {
+    const reverse = this.hasAttribute("reverse");
+    const animate = this.hasAttribute("animate");
+    const text = this.getAttribute("text") || "";
+    const imageSrc = this.getAttribute("image-src") || "";
 
-        this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = `
             <style>
             article {
                 display: flex;
@@ -84,7 +84,9 @@ class AnimatedCard extends HTMLElement {
                 }
             }
             </style>
-            <article class="${reverse ? "reverse" : ""} ${animate ? "animate":""}">
+            <article class="${reverse ? "reverse" : ""} ${
+      animate ? "animate" : ""
+    }">
                 <p>${text}</p>
                 <div class="image-container">
                     <img src="./icons/Animated.svg" alt="" role="presentation">
@@ -92,7 +94,7 @@ class AnimatedCard extends HTMLElement {
                 </div>
             </article>
         `;
-    }
+  }
 }
 
-customElements.define('animated-card', AnimatedCard);
+customElements.define("animated-card", AnimatedCard);

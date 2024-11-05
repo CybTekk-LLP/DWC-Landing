@@ -1,4 +1,4 @@
-class VideoModal extends HTMLElement {
+export class VideoModal extends HTMLElement {
   constructor() {
     super();
     const shadow = this.attachShadow({ mode: "open" });
