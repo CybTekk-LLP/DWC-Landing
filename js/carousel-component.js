@@ -7,27 +7,26 @@ class Carousel extends HTMLElement {
         // Create the carousel structure
         const carousel = document.createElement("div");
         carousel.innerHTML = `
-            <div class="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./images/1.png" alt="Plants and Machinery>
+                        <img src="./images/1.png" alt="Plants and Machinery">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/2.png" alt="Plants and Machinery>
+                        <img src="./images/2.png" alt="Plants and Machinery">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/3.png" alt="Plants and Machinery>
+                        <img src="./images/3.png" alt="Plants and Machinery">
                     </div>
                      <div class="carousel-item">
-                        <img src="./images/3.png" alt="Plants and Machinery>
+                        <img src="./images/3.png" alt="Plants and Machinery">
                     </div>
                      <div class="carousel-item">
-                        <img src="./images/3.png" alt="Plants and Machinery>
+                        <img src="./images/3.png" alt="Plants and Machinery">
                     </div>
                 </div>
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
-            </div>`;
+           `;
 
         // Add classes for styling
         carousel.classList.add("carousel");
