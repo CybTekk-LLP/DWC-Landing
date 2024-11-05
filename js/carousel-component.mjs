@@ -11,13 +11,20 @@ export class Carousel extends HTMLElement {
         const style = document.createElement("style");
         style.textContent = `
             .carousel {
-                position: relative;
-                inline-size: 100%;
-                max-inline-size: 700px;
-                margin: auto;
-                overflow: hidden;
-                border-radius: 35px;
+            position: relative;
+            inline-size: 100%;
+            max-inline-size: 700px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 35px;
+            filter: grayscale(1);
+            @media screen and (width < 768px) {
+                border-radius: 20px;
             }
+        }
+        .carousel:hover{
+            filter: grayscale(0);
+        }
             .carousel img {
                 inline-size: 100%;
                 display: block;
@@ -59,7 +66,7 @@ export class Carousel extends HTMLElement {
     // Renders the carousel items based on data-images attribute
     renderCarousel() {
         const images = this.getAttribute('data-images')?.split(',') || [];
-        
+
         this.carousel.innerHTML = `
             <div class="carousel-inner">
                 ${images.map((src, index) => `
@@ -96,9 +103,12 @@ export class Carousel extends HTMLElement {
 
     nextSlide() { this.showSlide(this.currentSlide + 1); }
     prevSlide() { this.showSlide(this.currentSlide - 1); }
-    handleTouchStart(event) { this.startX = event.touches[0].clientX;
-        this.isDragging = true; }
-    handleTouchMove(event) { if (!this.isDragging) return;
+    handleTouchStart(event) {
+        this.startX = event.touches[0].clientX;
+        this.isDragging = true;
+    }
+    handleTouchMove(event) {
+        if (!this.isDragging) return;
 
         const currentX = event.touches[0].clientX;
         const diffX = this.startX - currentX;
@@ -109,8 +119,9 @@ export class Carousel extends HTMLElement {
         } else if (diffX < -20) {
             this.prevSlide();
             this.isDragging = false;
-        } }
-    handleTouchEnd() {  this.isDragging = false; }
+        }
+    }
+    handleTouchEnd() { this.isDragging = false; }
 }
 
 customElements.define("carousel-component", Carousel);
