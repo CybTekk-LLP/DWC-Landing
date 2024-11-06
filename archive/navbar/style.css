@@ -1,0 +1,167 @@
+body {
+    background-color: beige;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    margin: auto;
+    inline-size: 100%;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    margin-block-start: 20px;
+    background-color: #fafffda9;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 20px;
+    color: #525253;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    block-size: 50px;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    cursor: pointer;
+}
+
+ul>li>ul {
+    inset-inline-start: 0;
+    position: absolute;
+    display: grid;
+    text-align: start;
+    inline-size: 100%;
+    block-size: 100px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block-start: 20px;
+    font-size: 18px;
+    padding-inline-start: 20px;
+
+}
+
+nav:has(.hover):hover {
+    block-size: 180px;
+}
+
+p {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+p::after {
+    position: absolute;
+    content: "";
+    inline-size: 2px;
+    block-size: 2px;
+    background-color: #525253;
+    inset-inline-start: 50%;
+    translate: -50%;
+    inset-block-end: -5px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+p:hover::after,
+p.hover::after {
+    scale: 10 1;
+    opacity: 1;
+}
+
+nav:not(:hover) p.hover::after {
+    opacity: 0;
+}
+
+p:hover {
+    color: #2C2C2D;
+}
+
+nav>ul>li>ul>li {
+    display: none;
+    z-index: 0;
+}
+
+nav>ul>li:has(p.hover)>ul>li {
+    display: block;
+    z-index: 1;
+}
+
+
+ul>li>ul>li {
+    color: #565656;
+    transition: all 0.3s ease;
+}
+
+ul>li>ul>li:hover {
+    color: #2C2C2D;
+}
+
+@media screen and (width < 768px) {
+    header {
+        position: fixed;
+        block-size: 100dvh;
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        display: block;
+        font-size: 12px;
+        block-size: 100dvh;
+        background-color: #fafffda9;
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 0;
+        color: #525253;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        padding-block-start: 80px;
+    }
+
+    nav:hover,
+    nav:has(.hover):hover {
+        block-size: 100dvh;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav>ul>li:has(p.hover)>ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        block-size: 100%;
+        padding: 0;
+        background-color: #fafffda9;
+        padding: 10px;
+    }
+}
