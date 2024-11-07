@@ -21,14 +21,13 @@ header {
     text-align: center;
     margin-block-end: 3rem;
 }
+.md-sys-filled-button {
+    padding: 10px 40px;
+}
+
 .button {
-    background-color: aquamarine;
-    block-size: 50px;
-    /* display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
+    margin-block: 3rem;
+    text-align: center;
     
 }
 section {
@@ -40,11 +39,13 @@ section .top-section {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-
     &>p {
         padding-inline: 16px;
     }
 }
 section .bottom-img{
     text-align: center;
+    & >img{
+        inline-size: 100%;
+    }
 }
