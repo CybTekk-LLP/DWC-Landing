@@ -20,6 +20,7 @@ export class HeadingComponent extends HTMLElement {
     const animate = this.hasAttribute("animate");
     const text = this.getAttribute("text");
     const size = this.getAttribute("size");
+    const sizeMobile = this.getAttribute("sizeMobile");
 
     this.shadowRoot.innerHTML = `
     <style>
@@ -28,7 +29,10 @@ export class HeadingComponent extends HTMLElement {
         align-items: center;
         justify-content: center;
         inline-size: 100%;
-        block-size: ${size}px; 
+        block-size: ${size}px;
+        @media screen and (width < 768px) {
+          block-size: ${sizeMobile}px;
+        } 
       }
       
       .text {
@@ -38,6 +42,9 @@ export class HeadingComponent extends HTMLElement {
         opacity: 0;
         top: 40px;
         font-weight: bold;
+        @media screen and (width < 768px) {
+          font-size: ${sizeMobile}px;
+        } 
       }
 
       .text.animate {

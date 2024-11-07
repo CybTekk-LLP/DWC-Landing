@@ -1,0 +1,28 @@
+main {
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  margin-block-start: 220px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @media screen and (width < 768px) {
+    grid-template-columns: auto;
+  }
+}
+
+.hero div h3 {
+  font-size: 1.75rem;
+  max-inline-size: 550px;
+}
+
+.about-us {
+  margin-block-start: 180px;
+}
+
+.about-us .spacer {
+  block-size: 93px;
+}
