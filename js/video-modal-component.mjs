@@ -5,7 +5,7 @@ export class VideoModal extends HTMLElement {
     const template = document.createElement("template");
 
     template.innerHTML = `
-        <md-dialog open>
+        <md-dialog>
         <div class="container" slot="content">
           <form action="" method="dialog">
             <md-icon-button>
@@ -16,6 +16,7 @@ export class VideoModal extends HTMLElement {
             controls
             crossorigin
             playsinline
+            muted
             poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
           >
             <source
@@ -47,7 +48,7 @@ export class VideoModal extends HTMLElement {
         position: absolute;
         inset-inline-end: 20px;
         inset-block-start: 20px;
-        z-index: 1;
+        z-index: 2;
         background-color: #ffffff;
         border-radius: 50%;
         padding: 7px;
@@ -61,6 +62,9 @@ export class VideoModal extends HTMLElement {
     `;
     shadow.appendChild(style);
     shadow.appendChild(template.content.cloneNode(true));
+  }
+  showModal(){
+    this.shadowRoot.querySelector("md-dialog").setAttribute("open", "");
   }
 }
 

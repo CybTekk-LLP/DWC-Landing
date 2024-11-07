@@ -79,14 +79,22 @@
       <p>From visionary designs to on-time delivery, DWC Infra brings innovation and quality to every project.</p>
       <br><br>
       <div class="buttons">
-        <md-outlined-button class="md-sys-outline-button"><md-icon slot="icon">play_circle</md-icon> Watch a
+        <md-outlined-button class="md-sys-outline-button" onclick="openModal()"><md-icon
+            slot="icon">play_circle</md-icon> Watch a
           Video</md-outlined-button>
-        <md-filled-button class="md-sys-filled-button">Contact DWC</md-filled-button>
+        <md-filled-button class="md-sys-filled-button" href="./contact.html">Contact DWC</md-filled-button>
       </div>
     </div>
-
+    <video-modal-component ></video-modal-component>
+    <!-- <footer-component></footer-component> -->
   </main>
 </body>
 <script src="./js/script.js" type="module"></script>
+<script>
+  const openModal = () => {
+    const videoModal = document.querySelector("video-modal-component")
+    videoModal.showModal()
+  }
+</script>
 
 </html>
