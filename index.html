@@ -1,98 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <script type="importmap">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DWC Infra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script type="importmap">
       {
         "imports": {
           "@material/web/": "https://esm.run/@material/web/"
         }
       }
     </script>
-    <script type="module">
-      import "@material/web/all.js";
-      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+  <script type="module">
+    import "@material/web/all.js";
+    import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
 
-      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-    </script>
-    <style>
-      :root,
-      :host {
-        --md-sys-color-background: #fcf9f8;
-        --md-sys-color-on-background: #1c1b1c;
-        --md-sys-color-surface: #fcf9f8;
-        --md-sys-color-surface-dim: #dcd9d9;
-        --md-sys-color-surface-bright: #fcf9f8;
-        --md-sys-color-surface-container-lowest: #2c2c2d;
-        --md-sys-color-surface-container-low: #f6f3f3;
-        --md-sys-color-surface-container: #f0eded;
-        --md-sys-color-surface-container-high: #eae7e7;
-        --md-sys-color-surface-container-highest: #e5e2e2;
-        --md-sys-color-on-surface: #1c1b1c;
-        --md-sys-color-surface-variant: #e0e3e6;
-        --md-sys-color-on-surface-variant: #44474a;
-        --md-sys-color-inverse-surface: #313030;
-        --md-sys-color-inverse-on-surface: #f3f0f0;
-        --md-sys-color-outline: #74777a;
-        --md-sys-color-outline-variant: #c4c7ca;
-        --md-sys-color-shadow: #000000;
-        --md-sys-color-scrim: #000000;
-        --md-sys-color-surface-tint: #595f64;
-        --md-sys-color-primary: #181e22;
-        --md-sys-color-on-primary: #2c2c2d;
-        --md-sys-color-primary-container: #383e42;
-        --md-sys-color-on-primary-container: #cbd1d6;
-        --md-sys-color-inverse-primary: #c1c7cc;
-        --md-sys-color-secondary: #5d5e60;
-        --md-sys-color-on-secondary: #2c2c2d;
-        --md-sys-color-secondary-container: #e3e3e5;
-        --md-sys-color-on-secondary-container: #47494a;
-        --md-sys-color-tertiary: #201a21;
-        --md-sys-color-on-tertiary: #2c2c2d;
-        --md-sys-color-tertiary-container: #413a41;
-        --md-sys-color-on-tertiary-container: #d7ccd5;
-        --md-sys-color-error: #ba1a1a;
-        --md-sys-color-on-error: #2c2c2d;
-        --md-sys-color-error-container: #ffdad6;
-        --md-sys-color-on-error-container: #410002;
-      }
-    </style>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <about-slideshow></about-slideshow>
-    <!-- <dwc-project-card></dwc-project-card>
-    <infrastructure-component></infrastructure-component>
-    <video-modal-component></video-modal-component>
-    <carousel-component data-images="./images/1.png, ./images/2.png, ./images/3.png,./images/2.png,./images/2.png"></carousel-component>
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <style>
+    :root,
+    :host {
+      --md-sys-color-background: #fcf9f8;
+      --md-sys-color-on-background: #1c1b1c;
+      --md-sys-color-surface: #fcf9f8;
+      --md-sys-color-surface-dim: #dcd9d9;
+      --md-sys-color-surface-bright: #fcf9f8;
+      --md-sys-color-surface-container-lowest: #2c2c2d;
+      --md-sys-color-surface-container-low: #f6f3f3;
+      --md-sys-color-surface-container: #f0eded;
+      --md-sys-color-surface-container-high: #eae7e7;
+      --md-sys-color-surface-container-highest: #e5e2e2;
+      --md-sys-color-on-surface: #1c1b1c;
+      --md-sys-color-surface-variant: #e0e3e6;
+      --md-sys-color-on-surface-variant: #44474a;
+      --md-sys-color-inverse-surface: #313030;
+      --md-sys-color-inverse-on-surface: #f3f0f0;
+      --md-sys-color-outline: #74777a;
+      --md-sys-color-outline-variant: #c4c7ca;
+      --md-sys-color-shadow: #000000;
+      --md-sys-color-scrim: #000000;
+      --md-sys-color-surface-tint: #595f64;
+      --md-sys-color-primary: #181e22;
+      --md-sys-color-on-primary: #2c2c2d;
+      --md-sys-color-primary-container: #383e42;
+      --md-sys-color-on-primary-container: #cbd1d6;
+      --md-sys-color-inverse-primary: #c1c7cc;
+      --md-sys-color-secondary: #5d5e60;
+      --md-sys-color-on-secondary: #2c2c2d;
+      --md-sys-color-secondary-container: #e3e3e5;
+      --md-sys-color-on-secondary-container: #47494a;
+      --md-sys-color-tertiary: #201a21;
+      --md-sys-color-on-tertiary: #2c2c2d;
+      --md-sys-color-tertiary-container: #413a41;
+      --md-sys-color-on-tertiary-container: #d7ccd5;
+      --md-sys-color-error: #ba1a1a;
+      --md-sys-color-on-error: #2c2c2d;
+      --md-sys-color-error-container: #ffdad6;
+      --md-sys-color-on-error-container: #410002;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/landing.css">
+</head>
 
-    <animated-card
-      reverse
-      text="DWC provides experienced and knowledgeable professionals to handle all phases of the project. As a General Contractor, we handle all types and sizes of projects, from fresh constructions to renovations. Workers and qualified sub-contractors deliver your project on-time with the highest degree of safety and quality."
-      image-src="./images/dwc-services-general.png"
-    ></animated-card>
-    <animated-card
-      animate
-      text="DWC provides experienced and knowledgeable professionals to handle all phases of the project. As a General Contractor, we handle all types and sizes of projects, from fresh constructions to renovations. Workers and qualified sub-contractors deliver your project on-time with the highest degree of safety and quality."
-      image-src="./images/dwc-services-general.png"
-    ></animated-card>
-    <heading-component
-      text="From visionary designs to on-time delivery, DWC Infra brings innovation
-    and quality to every project."
-      size="100"
-      animate
-    ></heading-component> -->
-  </body>
-  <script src="./js/script.js" type="module"></script>
+<body>
+  <navbar-component></navbar-component>
+  <main>
+
+
+    <div class="container">
+      <heading-component text="Pioneering Futuristic Construction" size="72" sizeMobile="55"
+        data-animate="auto"></heading-component>
+      <br><br><br>
+      <p>From visionary designs to on-time delivery, DWC Infra brings innovation and quality to every project.</p>
+      <br><br>
+      <div class="buttons">
+        <md-outlined-button class="md-sys-outline-button" ><md-icon slot="icon">play_circle</md-icon> Watch a Video</md-outlined-button>
+        <md-filled-button class="md-sys-filled-button">Contact</md-filled-button>
+      </div>
+    </div>
+
+  </main>
+</body>
+<script src="./js/script.js" type="module"></script>
+
 </html>
