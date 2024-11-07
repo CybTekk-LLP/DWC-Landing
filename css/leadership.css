@@ -13,7 +13,7 @@ main{
     max-inline-size: 1280px;
     inline-size: 90vw;
     margin-inline: auto;
-    margin-block-start: 220px;
+    padding-block-start: 220px;
 }
 header{
     text-align: center;

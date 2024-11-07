@@ -13,7 +13,7 @@ main {
     max-inline-size: 1280px;
     inline-size: 90vw;
     margin-inline: auto;
-    margin-block-start: 220px;
+    padding-block-start: 220px;
 }
 
 header {
@@ -44,4 +44,11 @@ header {
 
 .all-cards .number-card p {
     /* font-size: 1rem; */
+}
+.number-card{
+  padding: 10px;
+}
+:target{
+  border: 2px solid  #2c2c2d;
+  border-radius: 10px;
 }
