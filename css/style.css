@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Geologica", serif;
   font-weight: normal;
@@ -14,3 +18,4 @@ navbar-component {
   position: fixed;
   z-index: 3;
 }
+

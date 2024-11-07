@@ -4,7 +4,7 @@ let rotationY = 170;
 
 function rotateModel(scrollPos) {
   const model = document.querySelector("#model");
-  const rotationChange = (scrollPos - lastKnownScrollPosition) * 0.05;
+  const rotationChange = (scrollPos - lastKnownScrollPosition) * 0.1;
   rotationY += rotationChange;
   model.setAttribute("rotation", `0 ${rotationY} 0`);
   lastKnownScrollPosition = scrollPos;
@@ -20,14 +20,14 @@ document.addEventListener("scroll", () => {
   }
 });
 
-const sections = document.querySelectorAll("section");
+const allSections = document.querySelectorAll("section");
 const scene = document.querySelector("a-scene");
 const observerOptions = {
   root: null, // relative to the viewport
   threshold: 0.5, // 50% visibility to trigger the observer
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observers = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       console.log(`Visible section: ${entry.target.id}`);
@@ -35,15 +35,15 @@ const observer = new IntersectionObserver((entries) => {
         scene.classList?.remove("color");
         scene.classList?.remove("hide");
       }
-      if (entry.target.id === "commercial") {
+      if (entry.target.id === "model-text") {
         scene.classList.add("color");
         scene.classList?.remove("hide");
       }
-      if (entry.target.id === "three") {
+      if (entry.target.id === "commercial") {
         scene.classList.add("hide");
       }
     }
   });
 }, observerOptions);
 
-sections.forEach((section) => observer.observe(section));
+allSections.forEach((section) => observers.observe(section));

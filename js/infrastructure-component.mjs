@@ -25,7 +25,7 @@ export class InfrastructureComponent extends HTMLElement {
     style.textContent = `
             p {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                inline-size: 800px;
+                inline-size: 100%;
                 line-height: 2;
                 font-size: 36px;
                 transition: all 0.3s ease;
