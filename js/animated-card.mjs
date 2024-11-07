@@ -44,9 +44,17 @@ export class AnimatedCard extends HTMLElement {
 
             .image-container img:last-of-type {
                 inline-size: 100%;
+                object-fit: cover;
+                max-inline-size: 640px;
+                block-size: 404px;
+                border-radius: 35px;
+                transition: all 0.6s ease;
                 filter: grayscale(1) contrast(1.2) saturate(0.3);
             }
-
+            
+            .image-container img:last-of-type:hover{
+                filter: grayscale(0) contrast(1) saturate(1);
+            }
             .image-container img:first-of-type {
                 position: absolute;
                 inline-size: 20%;
