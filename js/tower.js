@@ -1,6 +1,6 @@
 let lastKnownScrollPosition = 0;
 let ticking = false;
-let rotationY = 180;
+let rotationY = 170;
 
 function rotateModel(scrollPos) {
   const model = document.querySelector("#model");
@@ -31,11 +31,11 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       console.log(`Visible section: ${entry.target.id}`);
-      if (entry.target.id === "one") {
+      if (entry.target.id === "landing") {
         scene.classList?.remove("color");
         scene.classList?.remove("hide");
       }
-      if (entry.target.id === "two") {
+      if (entry.target.id === "commercial") {
         scene.classList.add("color");
         scene.classList?.remove("hide");
       }

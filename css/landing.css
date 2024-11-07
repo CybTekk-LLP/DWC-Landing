@@ -23,7 +23,7 @@ main {
     max-inline-size: 1280px;
     inline-size: 90vw;
     margin-inline: auto;
-    padding-block-start: 220px;
+    padding-block-start: 160px;
 }
 
 .container {
@@ -66,4 +66,40 @@ a-scene {
     block-size: 800px;
     pointer-events: none;
     position: fixed;
+}
+
+.model-container{
+display: flex;
+position: relative;
+justify-content: center;
+}
+
+@media screen and (width < 768px) {
+    a-scene {
+        inline-size: 350px;
+        block-size: 350px;
+        pointer-events: none;
+        position: fixed;
+    }
+}
+
+.model-container::after{
+    position: absolute;
+    content: "";
+    background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    black 20px,
+    black 40px
+  );
+    inline-size: 100dvw;
+    block-size: 100px;
+    background-size: cover;
+    margin-block-start: 30vh;
+    z-index: -1;
+}
+
+#landing{
+    min-block-size: 100dvh;
 }

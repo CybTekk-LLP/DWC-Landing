@@ -72,51 +72,82 @@
 </head>
 
 <body>
-  
+
   <navbar-component></navbar-component>
   <main>
-
-
-    <div class="container">
-      <heading-component text="Pioneering Futuristic Construction" size="72" sizeMobile="55"
-        data-animate="auto"></heading-component>
-      <br><br><br>
-      <p>From visionary designs to on-time delivery, DWC Infra brings innovation and quality to every project.</p>
-      <br><br>
-      <div class="buttons">
-        <md-outlined-button class="md-sys-outline-button" onclick="openModal()"><md-icon
-            slot="icon">play_circle</md-icon> Watch a
-          Video</md-outlined-button>
-        <md-filled-button class="md-sys-filled-button" href="./contact.html">Contact DWC</md-filled-button>
+    <section id="landing">
+      <div class="container">
+        <heading-component text="Pioneering Futuristic Construction" size="72" sizeMobile="42"
+          data-animate="auto"></heading-component>
+        <br><br><br>
+        <p>From visionary designs to on-time delivery, DWC Infra brings innovation and quality to every project.</p>
+        <br><br>
+        <div class="buttons">
+          <md-outlined-button class="md-sys-outline-button" onclick="openModal()"><md-icon
+              slot="icon">play_circle</md-icon> Watch a
+            Video</md-outlined-button>
+          <md-filled-button class="md-sys-filled-button" href="./contact.html">Contact DWC</md-filled-button>
+        </div>
       </div>
-    </div>
-    <video-modal-component></video-modal-component>
+      <video-modal-component></video-modal-component>
 
-    <a-scene vr-mode-ui="enabled: false" embedded>
-      <a-assets>
-        <a-asset-item id="tower" src="./tower/scene.gltf"></a-asset-item>
-      </a-assets>
+      <div class="model-container">
+        <a-scene vr-mode-ui="enabled: false" embedded>
+          <a-assets>
+            <a-asset-item id="tower" src="./tower/scene.gltf"></a-asset-item>
+          </a-assets>
 
-      <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 2 5" orbit-controls="
-  autoRotate: false;
-  target: #target;
-  enableDamping: true;
-  dampingFactor: 0.125;
-  rotateSpeed:0.25;
-  minDistance:3;
-  maxDistance:100;
-  " mouse-cursor="">
-        <a-entity geometry="primitive:cone; radius-bottom:1; radius-top:0" scale=".33 1 .33" position="0 0 0"
-          rotation="90 0 0" material="color: #0099ff; transparent: true; opacity:0.5"></a-entity>
-      </a-entity>
+          <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 2 5" orbit-controls="
+    autoRotate: false;
+    target: #target;
+    enableDamping: true;
+    dampingFactor: 0.125;
+    rotateSpeed:0.25;
+    minDistance:3;
+    maxDistance:100;
+    " mouse-cursor="">
+            <a-entity geometry="primitive:cone; radius-bottom:1; radius-top:0" scale=".33 1 .33" position="0 0 0"
+              rotation="90 0 0" material="color: #0099ff; transparent: true; opacity:0.5"></a-entity>
+          </a-entity>
 
 
-      <a-entity position="0 0.1 0" id="target">
-        <a-entity id="model" gltf-model="#tower" animation-mixer scale="0.1 0.1 0.1" position="0 -2 0.2"
-          rotation="0 180 0"></a-entity>
-      </a-entity>
-    </a-scene>
-
+          <a-entity position="0 0.1 0" id="target">
+            <a-entity id="model" gltf-model="#tower" animation-mixer scale="0.1 0.1 0.1" position="0 -2 0.2"
+              rotation="0 170 0"></a-entity>
+          </a-entity>
+        </a-scene>
+      </div>
+    </section>
+    <section class="commercial" data-label="commercial" id="commercial">
+      <heading-component
+        text="Commercial"
+        size="64"
+        sizeMobile="50"
+        data-animate="auto"
+      ></heading-component>
+      <br><br><br>
+      <animated-card
+        reverse
+        text="DWC Infra redefines commercial construction by merging modern design with functionality. Each project reflects our commitment to quality and creativity, setting new industry standards."
+        image-src="./images/dwc-services-general.png"
+        data-animate="auto"
+      ></animated-card>
+    </section>
+    <br><br><br>
+    <section class="residential" data-label="residential">
+      <heading-component
+        text="Residential"
+        size="64"
+        sizeMobile="50"
+        data-animate="auto"
+      ></heading-component>
+      <br><br><br>
+      <animated-card
+        text="Our residential projects, whether single-family homes or multi-unit developments, prioritize comfort, aesthetics, and energy efficiency, helping you find the perfect place to call home."
+        image-src="./images/dwc-services-general.png"
+        data-animate="auto"
+      ></animated-card>
+    </section>
     <!-- <footer-component></footer-component> -->
   </main>
   <script src="./js/script.js" type="module"></script>
