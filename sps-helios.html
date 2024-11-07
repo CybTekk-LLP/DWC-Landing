@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <script type="importmap">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script type="importmap">
       {
         "imports": {
           "@material/web/": "https://esm.run/@material/web/"
         }
       }
     </script>
-    <script type="module">
-        import "@material/web/all.js";
-        import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
-    
-        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-      </script>
+  <script type="module">
+    import "@material/web/all.js";
+    import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <style>
+    :root,:host{--md-sys-color-background:#f9f9f9;--md-sys-color-on-background:#1b1b1b;--md-sys-color-surface:#f9f9f9;--md-sys-color-surface-dim:#dadada;--md-sys-color-surface-bright:#f9f9f9;--md-sys-color-surface-container-lowest:#ffffff;--md-sys-color-surface-container-low:#f3f3f3;--md-sys-color-surface-container:#eeeeee;--md-sys-color-surface-container-high:#e8e8e8;--md-sys-color-surface-container-highest:#e2e2e2;--md-sys-color-on-surface:#1b1b1b;--md-sys-color-surface-variant:#ebe0e1;--md-sys-color-on-surface-variant:#4c4546;--md-sys-color-inverse-surface:#303030;--md-sys-color-inverse-on-surface:#f1f1f1;--md-sys-color-outline:#7e7576;--md-sys-color-outline-variant:#cfc4c5;--md-sys-color-shadow:#000000;--md-sys-color-scrim:#000000;--md-sys-color-surface-tint:#5e5e5e;--md-sys-color-primary:#000000;--md-sys-color-on-primary:#ffffff;--md-sys-color-primary-container:#262626;--md-sys-color-on-primary-container:#b1b1b1;--md-sys-color-inverse-primary:#c6c6c6;--md-sys-color-secondary:#5e5e5e;--md-sys-color-on-secondary:#ffffff;--md-sys-color-secondary-container:#e6e6e6;--md-sys-color-on-secondary-container:#4a4a4a;--md-sys-color-tertiary:#000000;--md-sys-color-on-tertiary:#ffffff;--md-sys-color-tertiary-container:#262626;--md-sys-color-on-tertiary-container:#b1b1b1;--md-sys-color-error:#ba1a1a;--md-sys-color-on-error:#ffffff;--md-sys-color-error-container:#ffdad6;--md-sys-color-on-error-container:#410002;}
+  </style>
     <link rel="stylesheet" href="./css/spshelios.css">
     <title>SPS Helios</title>
 </head>
@@ -27,48 +32,35 @@
     <navbar-component></navbar-component>
     <main>
         <header>
-            <heading-component text="SPS Helios" size="72" sizeMobile="55" animate></heading-component>
+            <heading-component text="SPS Helios"  size="72"
+            sizeMobile="55" animate></heading-component>
         </header>
         <carousel-component
             data-images="./images/PlantAndMachinery/PlantAndMachinery1.jpg, ./images/PlantAndMachinery/PlantAndMachinery2.jpg, ./images/PlantAndMachinery/PlantAndMachinery3.jpg,./images/PlantAndMachinery/PlantAndMachinery4.jpg,./images/PlantAndMachinery/PlantAndMachinery5.png"></carousel-component>
-        <div class="buttons">
-            <md-outlined-button class="md-sys-outline-button"><md-icon slot="icon">play_circle</md-icon> Watch a
-                Video</md-outlined-button>
-            <md-filled-button class="md-sys-filled-button">Contact</md-filled-button>
+        <div class="button">
+            <md-filled-button class="md-sys-filled-button">Contact DWC</md-filled-button>
+        </div> 
+      <section >
+        <div class="top-section">
+            <img src="./images/SpsHelios/SpsHelios.svg" alt="SPS Helios">
+            <p>We dream of coming up with innovation, strategically designed to enhance the thriving residential hub. We seek to match up the lifestyle of the entire area,becoming a centre for social and economic growth. Our aim always revolves around one entity that is our customers.</p>
         </div>
+        <br>
+        <p>Introducing an exceptional commercial opportunity on Zirakpur's VIP Road, strategically located near Pentahome. Secure your space in one of the most sought-after locations with commercial shop showrooms available in 12×50, 12×30, and 14×60 sizes.</p>
+       
+       <br> <p>
+            HELIOS offers a prime setting for your business, combining a prestigious location with unmatched potential for growth. With our flexible payment plan, payments are linked to the progress of construction, making it easier for you to invest with confidence.
+        </p>
+        <br>
+        <p>
+            Developed by SP Singla Construction, the building is designed to meet modern business needs, featuring a lift, power backup, and a spacious parking area at the front. This is a limited-time opportunity to secure your place in a rapidly growing commercial hub. Act now and make a smart investment for your future.
+        </p>
+        <div class="bottom-img">
+            <img src="./images/SpsHelios/SpsStructure.svg" alt="sps">
         </div>
-        <section>
-            <div class="top-section">
-                <img src="./images/SpsHelios/SpsHelios.svg" alt="SPS Helios">
-                <p>We dream of coming up with innovation, strategically designed to enhance the thriving residential
-                    hub. We seek to match up the lifestyle of the entire area,becoming a centre for social and economic
-                    growth. Our aim always revolves around one entity that is our customers.</p>
-            </div>
-            <br>
-            <p>Introducing an exceptional commercial opportunity on Zirakpur's VIP Road, strategically located near
-                Pentahome. Secure your space in one of the most sought-after locations with commercial shop showrooms
-                available in 12×50, 12×30, and 14×60 sizes.</p>
-
-            <br>
-            <p>
-                HELIOS offers a prime setting for your business, combining a prestigious location with unmatched
-                potential for growth. With our flexible payment plan, payments are linked to the progress of
-                construction, making it easier for you to invest with confidence.
-            </p>
-            <br>
-            <p>
-                Developed by SP Singla Construction, the building is designed to meet modern business needs, featuring a
-                lift, power backup, and a spacious parking area at the front. This is a limited-time opportunity to
-                secure your place in a rapidly growing commercial hub. Act now and make a smart investment for your
-                future.
-            </p>
-            <div class="bottom-img">
-                <img src="./images/SpsHelios/SpsStructure.svg" alt="sps">
-            </div>
-        </section>
+      </section>
         <footer-component></footer-component>
     </main>
     <script src="./js/script.js" type="module"></script>
 </body>
-
 </html>

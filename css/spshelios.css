@@ -21,7 +21,16 @@ header {
     text-align: center;
     margin-block-end: 3rem;
 }
-
+.button {
+    background-color: aquamarine;
+    block-size: 50px;
+    /* display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    
+}
 section {
     margin-block: 4rem;
 }
