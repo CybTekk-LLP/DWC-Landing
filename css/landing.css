@@ -1,46 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-  --md-ref-typeface-brand: 'Geologica';
+  --md-ref-typeface-brand: "Geologica";
   --md-ref-typeface-plain: system-ui;
 }
 body {
-    font-family: "Geologica", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    background-color: var(--md-sys-color-background);
-    color: var(--md-sys-color-on-background);
+  font-family: "Geologica", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
 }
 
 main {
-    max-inline-size: 1280px;
-    inline-size: 90vw;
-    margin-inline: auto;
-    padding-block-start: 220px;
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  padding-block-start: 160px;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .md-sys-filled-button {
-    padding: 10px 40px;
+  padding: 10px 40px;
 }
 
 .md-sys-outline-button {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
-
 .buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
