@@ -3,19 +3,30 @@ main {
   inline-size: 90vw;
   margin-inline: auto;
   padding-block-start: 220px;
+}
+
+main section .cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  margin-block-end: 80px;
 }
 
-main h1 {
+main section h1 {
   text-align: center;
+  margin-block-end: 40px;
 }
 
-main img {
+main section img {
   inline-size: 100%;
+  max-inline-size: 600px;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   image-rendering: optimizeSpeed;
+}
+
+:target {
+  border: 2px solid #2c2c2d;
+  border-radius: 10px;
 }
