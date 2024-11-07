@@ -21,3 +21,21 @@ main h1 {
 .service-four {
   margin-block: 170px;
 }
+
+.service-five {
+  margin-block: 170px;
+}
+
+.service-six {
+  margin-block: 170px;
+}
+
+.service-seven {
+  margin-block: 170px;
+}
+
+:target {
+  border: 2px solid #2c2c2d;
+  border-radius: 10px;
+  padding: 20px;
+}
