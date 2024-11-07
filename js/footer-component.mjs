@@ -5,7 +5,7 @@ export class Footer extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" });
 
     const footer = document.createElement("footer");
-    footer.innerHTML = `<img class="logo" src="./assets/Logo.svg" alt="logo" />
+    footer.innerHTML = `<img class="logo" src="./icons/Logo.svg" alt="logo" />
       <ul class="footer-links">
         <li>
           Address
@@ -15,25 +15,25 @@ export class Footer extends HTMLElement {
                 href="https://maps.app.goo.gl/ajSmBm9pyVc9ugWD9"
                 target="_blank"
               >
-                <img src="./assets/Location.svg" alt="location" />
+                <img src="./icons/Location.svg" alt="location" />
                 373, Phase-2, Industrial Area, Panchkula-134109 (Haryana) INDIA
               </a>
             </li>
             <li class="address-link">
               <a href="tel:9878883436" target="_blank">
-                <img src="./assets/Phone.svg" alt="phone" />
+                <img src="./icons/Phone.svg" alt="phone" />
                 9878883436, 9878883447
               </a>
             </li>
             <li class="address-link">
               <a href="mailto:mail@dwcinfra.com" target="_blank">
-                <img src="./assets/Message.svg" alt="mail" />
+                <img src="./icons/Message.svg" alt="mail" />
                 mail@dwcinfra.com
               </a>
             </li>
             <li class="address-link">
               <a href="#">
-                <img src="./assets/Globe.svg" alt="website" />
+                <img src="./icons/Globe.svg" alt="website" />
                 www.dwcinfra.com
               </a>
             </li>
@@ -57,20 +57,20 @@ export class Footer extends HTMLElement {
           <ul class="inner-list">
             <l1 class="social-link"
               ><a href="/facebook" target="_blank"
-                ><img src="./assets/Facebook.svg" alt="facebook" /></a
+                ><img src="./icons/Facebook.svg" alt="facebook" /></a
             ></l1>
             <l1 class="social-link"
               ><a href="https://www.instagram.com/dwcinfra/" target="_blank"
-                ><img src="./assets/Instagram.svg" alt="Instagram" /></a
+                ><img src="./icons/Instagram.svg" alt="Instagram" /></a
             ></l1>
             <l1 class="social-link"
               ><a href="https://twitter.com/dwcinfra" target="_blank"
-                ><img src="./assets/Twitter.svg" alt="Twitter" /></a
+                ><img src="./icons/Twitter.svg" alt="Twitter" /></a
             ></l1>
           </ul>
           <img
             class="board"
-            src="./assets/Board.svg"
+            src="./icons/Board.svg"
             alt=""
             role="presentation"
           />
@@ -97,7 +97,8 @@ export class Footer extends HTMLElement {
 
 
 .footer {
-  padding: 20px 3.43vw;
+  inline-size: 100%;
+  padding: 20px;
   font-family: "Geologica", serif;
   font-optical-sizing: auto;
   font-weight: 400;
