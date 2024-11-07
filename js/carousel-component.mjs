@@ -58,6 +58,7 @@ export class Carousel extends HTMLElement {
             border: none;
             cursor: pointer;
             color: white;
+            font-size:20px;
         }
 
         button.prev {
