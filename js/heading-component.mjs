@@ -47,7 +47,7 @@ export class HeadingComponent extends HTMLElement {
       }
 
       .text.animate {
-        animation: slideUp ease 0.4s forwards;
+        animation: slideUp ease 0.9s forwards;
       }
       
       @keyframes slideUp {

@@ -1,5 +1,5 @@
 let currentSectionIndex = -1;
-const sections = document.querySelectorAll("[data-animate]");
+const sections = document.querySelectorAll("[data-label]");
 let animationData = new Array(sections.length).fill(false);
 
 const handleIntersection = (entries) => {
@@ -16,8 +16,10 @@ const handleIntersection = (entries) => {
 const renderAnimation = (index) => {
   // if (animationData[index]) return;
   animationData[index] = true; // Set current section's animation to true
-  if (!animationData[Math.min(index + 1, sections.length - 1)])
-    sections[index].setAttribute("animate", "");
+  // if (!animationData[Math.min(index + 1, sections.length - 1)]) {
+  let animationTargets = sections[index].querySelectorAll("[data-animate]");
+  animationTargets.forEach((target) => target.setAttribute("animate", ""));
+  // }
 };
 
 // Initialize the observer
