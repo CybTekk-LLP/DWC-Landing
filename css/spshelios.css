@@ -42,12 +42,6 @@ section .top-section {
     &>p {
         padding-inline: 16px;
     }
-    @media screen and (width<=768px) {
-        flex-direction: column;
-        &>p {
-            padding-inline: 0px;
-        }
-    }
 }
 section .bottom-img{
     text-align: center;
