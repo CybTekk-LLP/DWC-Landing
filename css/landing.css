@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+=======
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+>>>>>>> c55d49c169b1b5b2812ff051727883233ea4aae8
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
+<<<<<<< HEAD
   --md-ref-typeface-brand: "Geologica";
   --md-ref-typeface-plain: system-ui;
+=======
+    --md-ref-typeface-brand: 'Geologica';
+    --md-ref-typeface-plain: system-ui;
+>>>>>>> c55d49c169b1b5b2812ff051727883233ea4aae8
 }
+
 body {
   font-family: "Geologica", sans-serif;
   font-weight: normal;
@@ -36,9 +48,38 @@ main {
 }
 
 .buttons {
+<<<<<<< HEAD
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+=======
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a-scene {
+    transition: all 2s ease;
+    filter: grayscale(1) contrast(2) brightness(2);
+
+}
+
+a-scene.color {
+    filter: grayscale(0) contrast(1) brightness(1);
+
+}
+
+a-scene.hide {}
+
+
+a-scene {
+    inline-size: 800px;
+    block-size: 800px;
+    pointer-events: none;
+    position: fixed;
+>>>>>>> c55d49c169b1b5b2812ff051727883233ea4aae8
 }

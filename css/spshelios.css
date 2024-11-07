@@ -34,6 +34,7 @@ section {
 }
 
 section .top-section {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,4 +48,19 @@ section .bottom-img {
   & > img {
     inline-size: 100%;
   }
+=======
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    &>p {
+        padding-inline: 16px;
+    }
+    @media screen and (width<=768px) {
+        flex-direction: column;
+        &>p {
+            padding-inline: 0px;
+        }
+    }
+>>>>>>> c55d49c169b1b5b2812ff051727883233ea4aae8
 }
