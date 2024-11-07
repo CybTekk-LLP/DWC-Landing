@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+  <script type="module">
+    import "@material/web/all.js";
+    import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <style>
+    :root,
+    :host {
+      --md-sys-color-background: #fff;
+      --md-sys-color-on-background: #1c1b1b;
+      --md-sys-color-surface: #fdf8f8;
+      --md-sys-color-surface-dim: #ddd9d9;
+      --md-sys-color-surface-bright: #fdf8f8;
+      --md-sys-color-surface-container-lowest: #ffffff;
+      --md-sys-color-surface-container-low: #f7f3f2;
+      --md-sys-color-surface-container: #f1edec;
+      --md-sys-color-surface-container-high: #ebe7e7;
+      --md-sys-color-surface-container-highest: #e5e2e1;
+      --md-sys-color-on-surface: #1c1b1b;
+      --md-sys-color-surface-variant: #e2e2e6;
+      --md-sys-color-on-surface-variant: #45474a;
+      --md-sys-color-inverse-surface: #313030;
+      --md-sys-color-inverse-on-surface: #f4f0ef;
+      --md-sys-color-outline: #76777a;
+      --md-sys-color-outline-variant: #c6c6ca;
+      --md-sys-color-shadow: #000000;
+      --md-sys-color-scrim: #000000;
+      --md-sys-color-surface-tint: #5f5e5f;
+      --md-sys-color-primary: #1a1a1b;
+      --md-sys-color-on-primary: #ffffff;
+      --md-sys-color-primary-container: #3a3a3b;
+      --md-sys-color-on-primary-container: #cecccd;
+      --md-sys-color-inverse-primary: #c8c6c7;
+      --md-sys-color-secondary: #5f5e5e;
+      --md-sys-color-on-secondary: #ffffff;
+      --md-sys-color-secondary-container: #e9e6e6;
+      --md-sys-color-on-secondary-container: #4b4a4a;
+      --md-sys-color-tertiary: #1c191a;
+      --md-sys-color-on-tertiary: #ffffff;
+      --md-sys-color-tertiary-container: #3c393a;
+      --md-sys-color-on-tertiary-container: #d1cacb;
+      --md-sys-color-error: #ba1a1a;
+      --md-sys-color-on-error: #ffffff;
+      --md-sys-color-error-container: #ffdad6;
+      --md-sys-color-on-error-container: #410002;
+    }
+  </style>
+    <link rel="stylesheet" href="./css/mohalicitycenter.css">
+    <title>Mohali City Center</title>
+</head>
+
+<body>
+    <navbar-component></navbar-component>
+    <main>
+        <header>
+            <heading-component text="Mohali City Center"  size="72"
+            sizeMobile="55" animate></heading-component>
+        </header>
+        <carousel-component
+            data-images="./images/DWC1.jpg, ./images/DWC2.jpg, ./images/DWC3.jpg,./images/PlantAndMachinery/PlantAndMachinery4.jpg"></carousel-component>
+        <div class="button">
+            <md-filled-button class="md-sys-filled-button" href="./images/MohaliCityCenter/MohaliBrochure.pdf"  target="_blank" >Download Brochure</md-filled-button>
+        </div> 
+      <section >
+        <div class="top-section">
+            <img src="./images/MohaliCityCenter/Mohalicitycenter.svg" alt="Mohali City Center">
+            <p>We dream of coming up with innovation, strategically designed to enhance the thriving residential hub. We seek to match up the lifestyle of the entire area,becoming a centre for social and economic growth. Our aim always revolves around one entity that is our customers.</p>
+        </div>
+        <br>
+        <div class="bottom-img">
+            <img src="./images/MohaliCityCenter/MohalicityCenterStructure.svg" alt="Mohali city center">
+        </div>
+      </section>
+        <footer-component></footer-component>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
