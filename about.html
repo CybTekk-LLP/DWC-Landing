@@ -13,14 +13,15 @@
   </head>
   <body>
     <main>
-      <section class="hero">
+      <section class="hero" data-label="hero">
         <div>
           <heading-component
             text="About"
             size="72"
             sizeMobile="55"
-            animate
+            data-animate="auto"
           ></heading-component>
+          <br />
           <br />
           <h3>
             "CRAFTING EXCELLENCE IN EVERY BRICK: UNVEILING THE VISION AND
@@ -31,41 +32,41 @@
           <about-slideshow></about-slideshow>
         </article>
       </section>
-      <section class="about-us">
+      <section class="about-us" data-label="about-us">
         <heading-component
           text="Who we are"
           size="64"
           sizeMobile="50"
-          animate
+          data-animate="auto"
         ></heading-component>
         <div class="spacer" aria-hidden="true"></div>
         <animated-card
           reverse
           text="DWC provides experienced and knowledgeable professionals to handle all phases of the project. As a General Contractor, we handle all types and sizes of projects, from fresh constructions to renovations. Workers and qualified sub-contractors deliver your project on-time with the highest degree of safety and quality."
           image-src="./images/dwc-services-general.png"
-          animate
+          data-animate="auto"
         ></animated-card>
       </section>
-      <section class="excellence">
+      <section class="excellence" data-label="excellence">
         <heading-component
           text="Excellence"
           size="64"
           sizeMobile="50"
-          animate
+          data-animate="auto"
         ></heading-component>
         <div class="spacer" aria-hidden="true"></div>
         <animated-card
           text="DWC provides experienced and knowledgeable professionals to handle all phases of the project. As a General Contractor, we handle all types and sizes of projects, from fresh constructions to renovations. Workers and qualified sub-contractors deliver your project on-time with the highest degree of safety and quality."
           image-src="./images/dwc-services-general.png"
-          animate
+          data-animate="auto"
         ></animated-card>
       </section>
-      <section class="numbers">
+      <section class="numbers" data-label="numbers">
         <heading-component
           text="Numbers"
           size="64"
           sizeMobile="50"
-          animate
+          data-animate="auto"
         ></heading-component>
         <div class="spacer" aria-hidden="true"></div>
         <div class="all-cards">
@@ -94,5 +95,6 @@
       <footer-component></footer-component>
     </main>
     <script src="./js/script.js" type="module"></script>
+    <script src="./js/animate.js"></script>
   </body>
 </html>
