@@ -1,0 +1,31 @@
+body {
+  background-color: #fff;
+}
+
+a-scene {
+  transition: all 2s ease;
+  filter: grayscale(1) contrast(2) brightness(2);
+
+}
+
+a-scene.color {
+  filter: grayscale(0) contrast(1) brightness(1);
+
+}
+
+a-scene.hide {}
+
+section {
+  min-block-size: 100dvh;
+}
+
+a-scene {
+  inline-size: 100%;
+  block-size: 100dvh;
+  pointer-events: none;
+  position: fixed;
+}
+
+h1 {
+  position: absolute;
+}
