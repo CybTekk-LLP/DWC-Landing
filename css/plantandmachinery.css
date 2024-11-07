@@ -1,54 +1,53 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Geologica", serif;
-    font-weight: normal;
-    font-style: normal;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Geologica", serif;
+  font-weight: normal;
+  font-style: normal;
+}
 main {
-    max-inline-size: 1280px;
-    inline-size: 90vw;
-    margin-inline: auto;
-    padding-block-start: 220px;
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  padding-block-start: 160px;
 }
 
 header {
-    text-align: center;
-    margin-block-end: 3rem;
+  text-align: center;
+  margin-block-end: 3rem;
 }
 
 .number {
-    margin-block-start: 3rem;
-    margin-block-end: 180px;
-  }
+  margin-block-start: 3rem;
+  margin-block-end: 180px;
+}
 .spacer {
-    block-size: 50px;
-  }
+  block-size: 50px;
+}
 .all-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    @media screen and (width<=580px){
-        grid-template-columns: 1fr 1fr ;
-        
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  @media screen and (width<=580px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .all-cards .number-card h1 {
-    /* font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem); */
+  /* font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem); */
 }
 
 .all-cards .number-card p {
-    /* font-size: 1rem; */
+  /* font-size: 1rem; */
 }
-.number-card{
+.number-card {
   padding: 10px;
 }
-:target{
-  border: 2px solid  #2c2c2d;
+:target {
+  border: 2px solid #2c2c2d;
   border-radius: 10px;
 }

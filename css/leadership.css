@@ -1,22 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Geologica", serif;
-    font-weight: normal;
-    font-style: normal;
-  }
-main{
-    max-inline-size: 1280px;
-    inline-size: 90vw;
-    margin-inline: auto;
-    padding-block-start: 220px;
-}
-header{
-    text-align: center;
-    margin-block-end: 100px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Geologica", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+main {
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  padding-block-start: 160px;
+}
+header {
+  text-align: center;
+  margin-block-end: 100px;
+}
