@@ -1,0 +1,21 @@
+main {
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  padding-block-start: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main img {
+  inline-size: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: optimizeSpeed;
+}
