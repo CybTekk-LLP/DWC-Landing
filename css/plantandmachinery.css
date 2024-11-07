@@ -1,0 +1,13 @@
+main {
+    max-inline-size: 1280px;
+    inline-size: 90vw;
+    margin-inline: auto;
+    margin-block-start: 220px;
+    & >header{
+        text-align: center;
+        margin-block-end: 1.5rem;
+    }
+    & > .number-section{
+        margin-block-start: 1.5rem;
+    }
+}
