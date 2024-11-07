@@ -1,6 +1,5 @@
-
-import "https://unpkg.com/monotone-shapes@1.0.5/src/app.js"
-const template = document.createElement('template');
+import "https://unpkg.com/monotone-shapes@1.0.5/src/app.js";
+const template = document.createElement("template");
 template.innerHTML = `
   <style>
    
@@ -294,10 +293,10 @@ label {
                                     text="Hospitality Sector"></monotone-shape>Hospitality Sector</a></li>
                         <li><a href="./industries.html#education-sector"><monotone-shape shape-id=""
                                     text="Education Sector"></monotone-shape>Education Sector</a></li>
-                        <li><a href="./industries.html#hospitals"><monotone-shape shape-id=""
-                                    text="Hospitals"></monotone-shape>Hospitals</a></li>
-                        <li><a href="./industries.html#office-spaces"><monotone-shape shape-id=""
-                                    text="Office Spaces"></monotone-shape>Office Spaces</a></li>
+                        <li><a href="./industries.html#healthcare"><monotone-shape shape-id=""
+                                    text="Healthcare"></monotone-shape>Healthcare</a></li>
+                        <li><a href="./industries.html#retail-spaces"><monotone-shape shape-id=""
+                                    text="Retail Spaces"></monotone-shape>Retail Spaces</a></li>
                         <li><a href="./industries.html#it-sector"><monotone-shape shape-id=""
                                     text="IT Sector"></monotone-shape>IT Sector</a></li>
                     </ul>
@@ -380,43 +379,42 @@ label {
 `;
 
 export class NavbarComponent extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+  }
 
-    connectedCallback() {
-        const nav = this.shadowRoot.querySelector("nav")
-        const lists = this.shadowRoot.querySelectorAll("nav>ul>li>ul")
-        const links = this.shadowRoot.querySelectorAll("nav > ul > li > span");
-        links.forEach(link => {
-            link.addEventListener("mouseover", () => {
-                links.forEach(l => l.classList?.remove("hover"));
-                link.classList.add("hover");
-                lists.forEach(list => {
-                    list.style.display = 'none';
-                    list.offsetHeight; // Force browser reflow
-                    list.style.display = '';
-                })
-            });
+  connectedCallback() {
+    const nav = this.shadowRoot.querySelector("nav");
+    const lists = this.shadowRoot.querySelectorAll("nav>ul>li>ul");
+    const links = this.shadowRoot.querySelectorAll("nav > ul > li > span");
+    links.forEach((link) => {
+      link.addEventListener("mouseover", () => {
+        links.forEach((l) => l.classList?.remove("hover"));
+        link.classList.add("hover");
+        lists.forEach((list) => {
+          list.style.display = "none";
+          list.offsetHeight; // Force browser reflow
+          list.style.display = "";
         });
-        const checkbox = this.shadowRoot.querySelector("input[type='checkbox']");
-        checkbox.onclick = ()=>{
-            nav.style.display = 'none';
-            nav.offsetHeight; // Force browser reflow
-            nav.style.display = '';
-        }
-    }
+      });
+    });
+    const checkbox = this.shadowRoot.querySelector("input[type='checkbox']");
+    checkbox.onclick = () => {
+      nav.style.display = "none";
+      nav.offsetHeight; // Force browser reflow
+      nav.style.display = "";
+    };
+  }
 
-    disconnectedCallback() {
-        const links = this.shadowRoot.querySelectorAll("nav > ul > li > span");
-        links.forEach(link => {
-            link.removeEventListener("mouseover", this.handleMouseOver);
-        });
-    }
+  disconnectedCallback() {
+    const links = this.shadowRoot.querySelectorAll("nav > ul > li > span");
+    links.forEach((link) => {
+      link.removeEventListener("mouseover", this.handleMouseOver);
+    });
+  }
 }
 
-
-customElements.define('navbar-component', NavbarComponent);
+customElements.define("navbar-component", NavbarComponent);
