@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  <script
+    src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.14/dist/aframe-orbit-controls-component.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <section id="one">
+      <h1>
+        HOLA
+      </h1>
+      <a-scene vr-mode-ui="enabled: false" embedded>
+        <a-assets>
+          <a-asset-item id="candle" src="./scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 2 5" orbit-controls="
+    autoRotate: false;
+    target: #target;
+    enableDamping: true;
+    dampingFactor: 0.125;
+    rotateSpeed:0.25;
+    minDistance:3;
+    maxDistance:100;
+    " mouse-cursor="">
+          <a-entity geometry="primitive:cone; radius-bottom:1; radius-top:0" scale=".33 1 .33" position="0 0 0"
+            rotation="90 0 0" material="color: #0099ff; transparent: true; opacity:0.5"></a-entity>
+        </a-entity>
+
+
+        <a-entity position="0 0.1 0" id="target">
+          <a-entity id="model" gltf-model="#candle" animation-mixer scale="0.1 0.1 0.1" position="0 -2 0.2"
+            rotation="0 180 0"></a-entity>
+        </a-entity>
+      </a-scene>
+
+    </section>
+    <section id="two">
+
+    </section>
+    <section id="three"></section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

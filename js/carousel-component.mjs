@@ -16,8 +16,8 @@ export class Carousel extends HTMLElement {
             max-inline-size: 700px;
             margin: auto;
             overflow: hidden;
-            border-radius: 35px;
             filter: grayscale(1);
+            border-radius: 35px;
             @media screen and (width < 768px) {
                 border-radius: 20px;
             }
@@ -25,34 +25,49 @@ export class Carousel extends HTMLElement {
         .carousel:hover{
             filter: grayscale(0);
         }
-            .carousel img {
-                inline-size: 100%;
-                display: block;
-            }
-            .carousel-item {
-                min-inline-size: 100%;
-                box-sizing: border-box;
-            }
-            .carousel-inner {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-            button.prev,
-            button.next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: none;
-                border: none;
-                cursor: pointer;
-                color: white;
-            }
-            button.prev {
-                inset-inline-start: 10px;
-            }
-            button.next {
-                inset-inline-end: 10px;
-            }
+
+        .carousel img {
+            inline-size: 100%;
+            block-size: 100%;
+            object-fit: cover;
+            display: block;
+            
+        }
+
+        .carousel-item {
+            min-inline-size: 100%;
+            block-size: 100%;     
+            box-sizing: border-box;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            max-inline-size: 934px;
+            inline-size: 100%;
+            max-block-size: 460px;
+            block-size: 50vw;
+        }
+
+        button.prev,
+        button.next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size:20px;
+        }
+
+        button.prev {
+            inset-inline-start: 10px;
+        }
+
+        button.next {
+            inset-inline-end: 10px;
+        }
         `;
 
         shadow.appendChild(style);
