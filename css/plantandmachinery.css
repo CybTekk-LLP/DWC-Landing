@@ -18,14 +18,15 @@ main {
 
 header {
     text-align: center;
-    margin-block-end: 1.5rem;
+    margin-block-end: 3rem;
 }
 
 .number {
-    margin-block-start: 1.5rem;
-}
+    margin-block-start: 3rem;
+    margin-block-end: 180px;
+  }
 .spacer {
-    block-size: 20px;
+    block-size: 50px;
   }
 .all-cards {
     display: grid;
