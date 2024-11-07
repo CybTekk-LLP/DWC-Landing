@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import "@material/web/all.js";
+        import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+    
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+      </script>
     <link rel="stylesheet" href="./css/spshelios.css">
     <title>SPS Helios</title>
 </head>
@@ -15,32 +27,48 @@
     <navbar-component></navbar-component>
     <main>
         <header>
-            <heading-component text="SPS Helios"  size="72"
-            sizeMobile="55" animate></heading-component>
+            <heading-component text="SPS Helios" size="72" sizeMobile="55" animate></heading-component>
         </header>
         <carousel-component
             data-images="./images/PlantAndMachinery/PlantAndMachinery1.jpg, ./images/PlantAndMachinery/PlantAndMachinery2.jpg, ./images/PlantAndMachinery/PlantAndMachinery3.jpg,./images/PlantAndMachinery/PlantAndMachinery4.jpg,./images/PlantAndMachinery/PlantAndMachinery5.png"></carousel-component>
-      <section >
-        <div class="top-section">
-            <img src="./images/SpsHelios/SpsHelios.svg" alt="SPS Helios">
-            <p>We dream of coming up with innovation, strategically designed to enhance the thriving residential hub. We seek to match up the lifestyle of the entire area,becoming a centre for social and economic growth. Our aim always revolves around one entity that is our customers.</p>
+        <div class="buttons">
+            <md-outlined-button class="md-sys-outline-button"><md-icon slot="icon">play_circle</md-icon> Watch a
+                Video</md-outlined-button>
+            <md-filled-button class="md-sys-filled-button">Contact</md-filled-button>
         </div>
-        <br>
-        <p>Introducing an exceptional commercial opportunity on Zirakpur's VIP Road, strategically located near Pentahome. Secure your space in one of the most sought-after locations with commercial shop showrooms available in 12×50, 12×30, and 14×60 sizes.</p>
-       
-       <br> <p>
-            HELIOS offers a prime setting for your business, combining a prestigious location with unmatched potential for growth. With our flexible payment plan, payments are linked to the progress of construction, making it easier for you to invest with confidence.
-        </p>
-        <br>
-        <p>
-            Developed by SP Singla Construction, the building is designed to meet modern business needs, featuring a lift, power backup, and a spacious parking area at the front. This is a limited-time opportunity to secure your place in a rapidly growing commercial hub. Act now and make a smart investment for your future.
-        </p>
-        <div class="bottom-img">
-            <img src="./images/SpsHelios/SpsStructure.svg" alt="sps">
         </div>
-      </section>
+        <section>
+            <div class="top-section">
+                <img src="./images/SpsHelios/SpsHelios.svg" alt="SPS Helios">
+                <p>We dream of coming up with innovation, strategically designed to enhance the thriving residential
+                    hub. We seek to match up the lifestyle of the entire area,becoming a centre for social and economic
+                    growth. Our aim always revolves around one entity that is our customers.</p>
+            </div>
+            <br>
+            <p>Introducing an exceptional commercial opportunity on Zirakpur's VIP Road, strategically located near
+                Pentahome. Secure your space in one of the most sought-after locations with commercial shop showrooms
+                available in 12×50, 12×30, and 14×60 sizes.</p>
+
+            <br>
+            <p>
+                HELIOS offers a prime setting for your business, combining a prestigious location with unmatched
+                potential for growth. With our flexible payment plan, payments are linked to the progress of
+                construction, making it easier for you to invest with confidence.
+            </p>
+            <br>
+            <p>
+                Developed by SP Singla Construction, the building is designed to meet modern business needs, featuring a
+                lift, power backup, and a spacious parking area at the front. This is a limited-time opportunity to
+                secure your place in a rapidly growing commercial hub. Act now and make a smart investment for your
+                future.
+            </p>
+            <div class="bottom-img">
+                <img src="./images/SpsHelios/SpsStructure.svg" alt="sps">
+            </div>
+        </section>
         <footer-component></footer-component>
     </main>
     <script src="./js/script.js" type="module"></script>
 </body>
+
 </html>
