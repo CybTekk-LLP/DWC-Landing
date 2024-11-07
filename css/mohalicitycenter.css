@@ -38,20 +38,17 @@ section .top-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    &>p {
-        padding-inline: 16px;
-    }
+    gap: 50px;
+   
     @media screen and (width<=768px) {
         flex-direction: column;
-        &>p {
-            padding-inline: 0px;
-        }
+       
     }
 }
 section .bottom-img{
     text-align: center;
-    & >img{
-        inline-size: 100%;
-    }
+    
+}
+section .bottom-img img{
+    inline-size: 100%;
 }
