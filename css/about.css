@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Geologica", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 main {
   max-inline-size: 1280px;
   inline-size: 90vw;
@@ -20,9 +32,29 @@ main {
 }
 
 .about-us {
-  margin-block-start: 180px;
+  margin-block: 180px;
 }
 
-.about-us .spacer {
+.spacer {
   block-size: 93px;
+}
+
+.numbers {
+  margin-block: 180px;
+}
+
+.numbers .all-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.numbers .number-card h1 {
+  font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem);
+}
+
+.numbers .number-card p {
+  font-size: 1rem;
 }

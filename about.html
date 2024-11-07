@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
@@ -14,9 +18,10 @@
           <heading-component
             text="About"
             size="72"
-            sizeMobile="50"
+            sizeMobile="55"
             animate
           ></heading-component>
+          <br />
           <h3>
             "CRAFTING EXCELLENCE IN EVERY BRICK: UNVEILING THE VISION AND
             EXPERTISE OFDWC."
@@ -30,6 +35,7 @@
         <heading-component
           text="Who we are"
           size="64"
+          sizeMobile="50"
           animate
         ></heading-component>
         <div class="spacer" aria-hidden="true"></div>
@@ -44,16 +50,48 @@
         <heading-component
           text="Excellence"
           size="64"
+          sizeMobile="50"
           animate
         ></heading-component>
         <div class="spacer" aria-hidden="true"></div>
         <animated-card
-          reverse
           text="DWC provides experienced and knowledgeable professionals to handle all phases of the project. As a General Contractor, we handle all types and sizes of projects, from fresh constructions to renovations. Workers and qualified sub-contractors deliver your project on-time with the highest degree of safety and quality."
           image-src="./images/dwc-services-general.png"
           animate
         ></animated-card>
       </section>
+      <section class="numbers">
+        <heading-component
+          text="Numbers"
+          size="64"
+          sizeMobile="50"
+          animate
+        ></heading-component>
+        <div class="spacer" aria-hidden="true"></div>
+        <div class="all-cards">
+          <div class="number-card">
+            <h1>3.5</h1>
+            <br />
+            <p>Years of Experience</p>
+          </div>
+          <div class="number-card">
+            <h1>25</h1>
+            <br />
+            <p>Completed Projects</p>
+          </div>
+          <div class="number-card">
+            <h1>12</h1>
+            <br />
+            <p>Ongoing Projects</p>
+          </div>
+          <div class="number-card">
+            <h1>50+</h1>
+            <br />
+            <p>Trusted Clients</p>
+          </div>
+        </div>
+      </section>
+      <footer-component></footer-component>
     </main>
     <script src="./js/script.js" type="module"></script>
   </body>
