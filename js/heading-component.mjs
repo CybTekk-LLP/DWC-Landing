@@ -39,7 +39,6 @@ export class HeadingComponent extends HTMLElement {
         position: relative;
         font-family: Geologica;
         font-size: ${size}px;
-        opacity: 0;
         top: 40px;
         font-weight: bold;
         @media screen and (width < 768px) {
@@ -48,12 +47,13 @@ export class HeadingComponent extends HTMLElement {
       }
 
       .text.animate {
-        animation: slideUp ease 0.4s forwards;
+        animation: slideUp ease 0.9s forwards;
       }
       
       @keyframes slideUp {
         from {
           translate: 0;
+          opacity: 0;
         }
         to {
           translate: 0 -40px;
