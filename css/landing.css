@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+  --md-ref-typeface-brand: 'Geologica';
+  --md-ref-typeface-plain: system-ui;
+}
 body {
     font-family: "Geologica", sans-serif;
     font-weight: normal;
