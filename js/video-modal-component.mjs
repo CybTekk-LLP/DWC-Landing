@@ -17,7 +17,7 @@ export class VideoModal extends HTMLElement {
             crossorigin
             playsinline
             muted
-            poster="../images/poster.png"
+            poster="https://raw.githubusercontent.com/CybTekk-LLP/DWC-card/refs/heads/main/poster.png"
           >
             <source
               src="../videos/video.mp4"
