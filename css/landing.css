@@ -130,6 +130,7 @@ justify-content: center;
 
 #projects{
     position: relative;
+    scroll-margin-block-start: 100px;
 }
 
 .card{
@@ -143,4 +144,10 @@ justify-content: center;
    gap: 45px;
    justify-content: center;
    align-items: center;
+}
+
+:target .cards{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
 }

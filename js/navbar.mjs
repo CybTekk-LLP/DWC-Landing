@@ -35,6 +35,7 @@ nav {
     font-size: 12px;
     margin-block-start: 20px;
     background-color: #fafffda9;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
@@ -172,6 +173,7 @@ label {
         font-size: 12px;
         block-size: 100dvh;
         background-color: #fafffda9;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         border-radius: 15px;
         padding: 20px;
@@ -257,7 +259,7 @@ label {
         <nav>
             <ul>
                 <li>
-                    <span><a href="./about-company.html">About</a></span>
+                    <span><a href="javascript:void(0)">About</a></span>
                     <ul>
                         <li><a href="./about-company.html"><monotone-shape shape-id=""
                                     text="Company"></monotone-shape>Company</a></li>
