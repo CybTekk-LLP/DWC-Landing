@@ -17,6 +17,7 @@ export class Carousel extends HTMLElement {
             margin: auto;
             overflow: hidden;
             filter: grayscale(1);
+            transition: all 0.6s ease;
             border-radius: 35px;
             @media screen and (width < 768px) {
                 border-radius: 20px;
