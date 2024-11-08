@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,7 @@ header {
 }
 .md-sys-filled-button {
     padding: 10px 40px;
+    font-family: 'Geologica', sans-serif;
 }
 
 .button {
