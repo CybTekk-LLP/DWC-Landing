@@ -55,18 +55,18 @@ export class Footer extends HTMLElement {
         <li>
           Socials
           <ul class="inner-list">
-            <l1 class="social-link"
+            <li class="social-link"
               ><a href="/facebook" target="_blank"
                 ><img src="./icons/Facebook.svg" alt="facebook" /></a
-            ></l1>
-            <l1 class="social-link"
+            ></li>
+            <li class="social-link"
               ><a href="https://www.instagram.com/dwcinfra/" target="_blank"
                 ><img src="./icons/Instagram.svg" alt="Instagram" /></a
-            ></l1>
-            <l1 class="social-link"
+            ></li>
+            <li class="social-link"
               ><a href="https://twitter.com/dwcinfra" target="_blank"
                 ><img src="./icons/Twitter.svg" alt="Twitter" /></a
-            ></l1>
+            ></li>
           </ul>
           <img
             class="board"
@@ -104,7 +104,7 @@ export class Footer extends HTMLElement {
   font-weight: 400;
   font-style: normal;
   --primary: #2c2c2d;
-  --secondary: #838383;
+  --secondary: #434343;
 }
 
 .footer-links {
@@ -155,12 +155,12 @@ export class Footer extends HTMLElement {
 
 .social-link {
   margin-inline-end: 2.75rem;
-  filter: grayscale(1);
+  filter: grayscale(1) contrast(3);
   transition: all 0.6s ease;
 }
 
 .social-link:hover {
-  filter: grayscale(0);
+  filter: grayscale(0) contrast(1);
 }
 
 .social-link:last-of-type {
