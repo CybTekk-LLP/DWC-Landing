@@ -36,7 +36,7 @@ main .top-section .address {
   margin-inline: auto;
   margin-block: 70px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto;
   place-items: center;
   gap: 40px;
   @media screen and (width < 768px) {

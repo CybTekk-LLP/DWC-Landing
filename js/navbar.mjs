@@ -311,8 +311,6 @@ label {
                                     text="Mohali Citi Centre"></monotone-shape>Mohali Citi Centre</a></li>
                         <li><a href="./clients.html#marbella-grand"><monotone-shape shape-id=""
                                     text="Marbella Grand"></monotone-shape>Marbella Grand</a></li>
-                        <li><a href="./clients.html#prisma-plaza"><monotone-shape shape-id=""
-                                    text="Prisma Plaze"></monotone-shape>Prisma Plaze</a></li>
                         <li><a href="./clients.html#sps-realtors"><monotone-shape shape-id=""
                                     text="SPS Realtors"></monotone-shape>SPS Realtors</a></li>
                         <li><a href="./clients.html#vrs"><monotone-shape shape-id="" text="VRS"></monotone-shape>VRS</a>
