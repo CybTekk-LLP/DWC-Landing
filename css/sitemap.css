@@ -29,7 +29,7 @@
 }
 .sitemap-section div {
     flex: 1 1 200px;
-    margin-top: 10px;
+    margin-block-start: 10px;
 }
 a {
     text-decoration: none;
