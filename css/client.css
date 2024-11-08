@@ -29,4 +29,5 @@ main section img {
 :target {
   border: 2px solid #2c2c2d;
   border-radius: 10px;
+  scroll-margin-block-start: 100px;
 }
