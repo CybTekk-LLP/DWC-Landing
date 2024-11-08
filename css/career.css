@@ -30,14 +30,14 @@ header {
 .subheading {
   display: flex;
   justify-content: center;
-  /* background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
-.subheading .email{
+
+.subheading .email {
   display: flex;
   flex-direction: column;
+  color: #030303;
+  text-decoration: none;
+
 }
 
 
