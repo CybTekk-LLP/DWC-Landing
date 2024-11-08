@@ -13,7 +13,7 @@ export class AboutSlideShow extends HTMLElement {
       min-block-size: 400px;
       inline-size: 100%;
       overflow: hidden;
-      background-image: url(../images/About.png);
+      background-image: url(./images/About.png);
       background-size: 1200px;
       background-position: center;
       background-repeat: no-repeat;
