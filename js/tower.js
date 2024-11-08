@@ -39,7 +39,7 @@ const observers = new IntersectionObserver((entries) => {
         scene.classList.add("color");
         scene.classList?.remove("hide");
       }
-      if (entry.target.id === "commercial") {
+      if (entry.target.id === "commercial" || entry.target.id === "residential" || entry.target.id === "infrastructure" || entry.target.id === "projects") {
         scene.classList.add("hide");
       }
     }

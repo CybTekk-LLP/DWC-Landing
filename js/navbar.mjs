@@ -163,7 +163,7 @@ label {
 @media screen and (width < 868px) {
     header {
         position: fixed;
-        block-size: 100dvh;
+        block-size: auto;
     }
 
     nav {
@@ -235,22 +235,25 @@ label {
 
     label input:checked~span:first-of-type {
         rotate: 45deg;
-        translate: 0 6px;
+        translate: 0 7px;
     }
 
     label input:checked~span:last-of-type {
         rotate: -45deg;
-        translate: 0 -6px;
+        translate: 0 -7px;
     }
 
     header:has(label>input:checked) nav {
         display: block;
     }
+    header:has(label>input:checked){
+        block-size: 100dvh;
+    }
 }
   </style>
 
   <header>
-        <a href="./#"><img src="./icons/Logo.svg" alt=""></a>
+        <a href="./#"><img src="./icons/Logo.svg" alt="Logo"></a>
         <nav>
             <ul>
                 <li>
