@@ -62,7 +62,7 @@ export class AnimatedCard extends HTMLElement {
                 inset-block-start: -18px;
                 display: block;
                 z-index: 1;
-                
+                opacity: 0;
             }
 
             @media screen and (width < 768px) {
