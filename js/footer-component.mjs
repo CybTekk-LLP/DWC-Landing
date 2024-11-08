@@ -43,11 +43,11 @@ export class Footer extends HTMLElement {
         <li>
           Pages
           <ul class="pages inner-list">
-            <li><a href="./about.html">About</a></li>
+            <li><a href="./about-company.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./industries.html">Industries</a></li>
             <li><a href="./clients.html">Clients</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./index.html#projects">Projects</a></li>
             <li><a href="./careers.html">Careers</a></li>
             <li><a href="./plant-and-machinery.html">Plant & Machinery</a></li>
             <li><a href="./contact.html">Contact</a></li>
