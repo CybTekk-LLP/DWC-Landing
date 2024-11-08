@@ -17,7 +17,7 @@ main {
   padding-block-start: 160px;
 }
 
-header {
+.heading {
   text-align: center;
   margin-block-end: 100px;
 }
@@ -50,4 +50,7 @@ header {
 .job-subheading li .job-points {
   padding-inline-start: 2.5rem;
   list-style: disc;
+}
+.career-job{
+  margin-block-end: 180px;
 }
