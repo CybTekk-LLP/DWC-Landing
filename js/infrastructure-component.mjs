@@ -27,7 +27,7 @@ export class InfrastructureComponent extends HTMLElement {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 inline-size: 100%;
                 line-height: 2;
-                font-size: 36px;
+                font-size: clamp(1.25rem, 0.8356rem + 1.768vw, 2.25rem);
                 transition: all 0.3s ease;
             }
 
