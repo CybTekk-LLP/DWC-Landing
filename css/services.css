@@ -37,6 +37,20 @@ main h1 {
 :target {
   border: 2px solid #2c2c2d;
   border-radius: 10px;
-  padding: 20px;
   scroll-margin-block-start: 100px;
+  animation: fade 3s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    border: 2px solid #2c2c2d;
+  }
+
+  90% {
+    border: 2px solid #2c2c2d;
+  }
+
+  100% {
+    border: 2px solid transparent;
+  }
 }
