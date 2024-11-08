@@ -18,3 +18,12 @@ navbar-component {
   position: fixed;
   z-index: 3;
 }
+
+@media screen and (width < 768px) {
+  section {
+    text-align: center;
+  }
+  main.careers section ul li {
+    text-align: start !important;
+  }
+}
