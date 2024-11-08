@@ -32,17 +32,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  @media screen and (width<=580px) {
+  @media screen and (width<=768px) {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.all-cards .number-card h1 {
-  /* font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem); */
-}
-
-.all-cards .number-card p {
-  /* font-size: 1rem; */
 }
 .number-card {
   padding: 10px;

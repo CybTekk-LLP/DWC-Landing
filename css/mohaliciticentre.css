@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geologica", serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    max-inline-size: 1280px;
+    inline-size: 90vw;
+    margin-inline: auto;
+    padding-block-start: 220px;
+}
+
+header {
+    text-align: center;
+    margin-block-end: 3rem;
+}
+.md-sys-filled-button {
+    padding: 10px 40px;
+}
+
+.button {
+    margin-block: 3rem;
+    text-align: center;
+    
+}
+section {
+    margin-block: 4rem;
+}
+
+section .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+   
+    @media screen and (width<=768px) {
+        flex-direction: column;
+       
+    }
+}
+section .bottom-img{
+    text-align: center;
+    
+}
+section .bottom-img img{
+    inline-size: 100%;
+}
