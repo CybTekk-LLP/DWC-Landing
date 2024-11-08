@@ -35,6 +35,7 @@ nav {
     font-size: 12px;
     margin-block-start: 20px;
     background-color: #fafffda9;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
@@ -172,6 +173,7 @@ label {
         font-size: 12px;
         block-size: 100dvh;
         background-color: #fafffda9;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         border-radius: 15px;
         padding: 20px;
