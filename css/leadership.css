@@ -9,13 +9,19 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 main {
   max-inline-size: 1280px;
   inline-size: 90vw;
   margin-inline: auto;
   padding-block-start: 160px;
 }
+
 header {
   text-align: center;
   margin-block-end: 100px;
+}
+
+.leadership-section {
+  margin-block-end: 20vh;
 }
