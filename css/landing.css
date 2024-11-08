@@ -85,16 +85,21 @@ a-scene {
   content: "";
   background-image: repeating-linear-gradient(
     -45deg,
-    transparent,
-    transparent 20px,
+    #FFE11A,
+    #FFE11A 20px,
     black 20px,
     black 40px
   );
+  filter: grayscale(1) contrast(2);
   inline-size: 100dvw;
   block-size: 70px;
   background-size: cover;
   margin-block-start: 50vh;
   z-index: -1;
+  transition: all 1.6s ease;
+}
+body:has(#model-text:hover) #landing .model-container::after{
+  filter: grayscale(0) contrast(1);
 }
 
 #commercial {
