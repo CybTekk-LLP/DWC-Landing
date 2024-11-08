@@ -50,6 +50,8 @@ export class DwcProjectCard extends HTMLElement {
           img:nth-of-type(2) {
               filter: grayscale(1);
               transition: all 1s ease;
+              inline-size: 100%;
+              block-size: auto;
           }
     
           .container:hover img:nth-of-type(2) {
