@@ -257,7 +257,7 @@ label {
         <nav>
             <ul>
                 <li>
-                    <span><a href="./about-company.html">About</a></span>
+                    <span><a href="javascript:void(0)">About</a></span>
                     <ul>
                         <li><a href="./about-company.html"><monotone-shape shape-id=""
                                     text="Company"></monotone-shape>Company</a></li>
