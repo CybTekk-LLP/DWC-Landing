@@ -3,6 +3,7 @@ export class Footer extends HTMLElement {
     super();
 
     const shadow = this.attachShadow({ mode: "open" });
+    const year = new Date().getFullYear();
 
     const footer = document.createElement("footer");
     footer.innerHTML = `<img class="logo" src="./icons/Logo.svg" alt="logo" />
@@ -77,7 +78,7 @@ export class Footer extends HTMLElement {
         </li>
       </ul>
       <div class="footer-baseline">
-        <p>Copyright ©2024 DWC All rights reserved</p>
+        <p>Copyright ©${year} DWC All rights reserved</p>
         <ul>
           <li><a href="./privacy.html">Privacy</a></li>
           <li><a href="./terms.html">Terms</a></li>
