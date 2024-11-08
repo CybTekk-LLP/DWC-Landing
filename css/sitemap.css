@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Geologica", serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  main {
+    max-inline-size: 1280px;
+    inline-size: 90vw;
+    margin-inline: auto;
+    padding-block-start: 160px;
+  }
+  .heading{
+    text-align: center;
+    margin-block-end: 100px;
+  }
+
+.sitemap-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-block-end: 25vh;
+}
+.sitemap-section div {
+    flex: 1 1 200px;
+    margin-block-start: 10px;
+}
+a {
+    text-decoration: none;
+    color: #0071e3;
+}
+a:hover {
+    text-decoration: underline;
+}
