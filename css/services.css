@@ -38,4 +38,5 @@ main h1 {
   border: 2px solid #2c2c2d;
   border-radius: 10px;
   padding: 20px;
+  scroll-margin-block-start: 100px;
 }

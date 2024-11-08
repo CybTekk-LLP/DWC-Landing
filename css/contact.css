@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+
+:root {
+  --md-ref-typeface-brand: "Geologica";
+  --md-ref-typeface-plain: system-ui;
+}
+
+main {
+  padding-block-start: 160px;
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+}
+
+main .top-section {
+  text-align: center;
+}
+
+main .top-section .top-img {
+  inline-size: 100%;
+  max-inline-size: 1030px;
+  block-size: 565px;
+  object-fit: cover;
+}
+
+main .top-section .address {
+  inline-size: 100%;
+  max-inline-size: 900px;
+  margin-inline: auto;
+  margin-block: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 40px;
+  @media screen and (width < 768px) {
+    grid-template-columns: auto;
+  }
+}
+
+main .top-section .address .card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .top-section .address .card p {
+  font-size: 1rem;
+}
+
+main .contact-form {
+  margin-block: 170px;
+}
+
+main .contact-form form {
+  inline-size: 100%;
+  max-inline-size: 900px;
+  margin-inline: auto;
+}
+
+main .contact-form form md-outlined-text-field {
+  inline-size: 100%;
+}
+
+md-outlined-text-field {
+  resize: vertical;
+}
+
+md-filled-button {
+  padding-inline: 20px;
+}
