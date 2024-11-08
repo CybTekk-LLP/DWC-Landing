@@ -100,7 +100,9 @@
         </div>
       </section>
       <section class="contact-form">
-        <form action="javascript:void(0)">
+        <form aria-labelledby="form-heading" action="javascript:void(0)">
+          <h1 id="form-heading">We are just a message away!</h1>
+          <br><br>
           <md-outlined-text-field id="name-field" label="Name" type="text">
           </md-outlined-text-field>
           <br /><br />
@@ -130,7 +132,9 @@
         const message = document.getElementById('message-field').value;
   
         const subject = encodeURIComponent("Inquiry about Your Services");
-        const body = encodeURIComponent(`Hello,%0D%0A%0D%0AMy name is ${name}. I would like to learn more about your services. ${message}%0D%0A%0D%0AThank you,%0D%0A${name}`);
+        const body = encodeURIComponent(`Hello, My name is ${name}. 
+        I would like to learn more about your services. ${message}
+        Thank you,${name}`);
         const mailtoLink = `mailto:mail@dwcinfra.com?subject=${subject}&body=${body}`;
   
         window.location.href = mailtoLink;

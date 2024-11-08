@@ -54,7 +54,7 @@ export class Footer extends HTMLElement {
         </li>
         <li>
           Socials
-          <ul class="inner-list">
+          <ul class="inner-list socials">
             <li class="social-link"
               ><a href="/facebook" target="_blank"
                 ><img src="./icons/Facebook.svg" alt="facebook" /></a
@@ -151,6 +151,11 @@ export class Footer extends HTMLElement {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
+}
+
+.socials {
+  display: flex;
+  
 }
 
 .social-link {

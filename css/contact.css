@@ -57,6 +57,10 @@ main .contact-form form {
   margin-inline: auto;
 }
 
+main .contact-form form h1 {
+  font-weight: 400;
+}
+
 main .contact-form form md-outlined-text-field {
   inline-size: 100%;
 }
