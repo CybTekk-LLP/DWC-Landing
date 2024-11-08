@@ -255,7 +255,7 @@ label {
   </style>
 
   <header>
-        <a href="./#"><img src="./icons/Logo.svg" alt="Logo"></a>
+        <a href="./#"><img height="50px" src="./icons/Logo.svg" alt="Logo"></a>
         <nav>
             <ul>
                 <li>
