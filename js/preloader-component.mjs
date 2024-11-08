@@ -54,6 +54,9 @@ export class Preloader extends HTMLElement {
             inline-size: 100dvw;
             block-size: 100dvh;
             display: flex;
+            position: fixed;
+            z-index: 4;
+            overflow: hidden;
             justify-content: center;
             align-items: center;
             background: repeating-linear-gradient(0deg, #fafafa, #E0E0E0 5.7%, #F6F9FD 6%);
