@@ -129,6 +129,8 @@ a-scene {
 
 .card {
   text-align: center;
+  max-inline-size: 100%;
+  inline-size: 350px;
 }
 
 .cards {
