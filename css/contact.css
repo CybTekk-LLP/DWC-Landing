@@ -21,6 +21,13 @@ main .top-section .top-img {
   max-inline-size: 1030px;
   block-size: 565px;
   object-fit: cover;
+  filter: grayscale(1);
+  transition: all 0.6s ease;
+  border-radius: 20px;
+}
+
+main .top-section .top-img:hover {
+  filter: grayscale(0);
 }
 
 main .top-section .address {
