@@ -280,8 +280,6 @@ label {
                         </li>
                         <li><a href="./services.html#design-build"><monotone-shape shape-id=""
                                     text="Design & Build"></monotone-shape>Design & Build</a></li>
-                        <li><a href="./services.html#hospitality"><monotone-shape shape-id=""
-                                    text="Hospitality"></monotone-shape>Hospitality</a></li>
                         <li><a href="./services.html#joint-venture-model"><monotone-shape shape-id=""
                                     text="Joint Venture Model"></monotone-shape>Joint Venture Model</a></li>
                     </ul>
