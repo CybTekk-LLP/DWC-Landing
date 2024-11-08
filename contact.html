@@ -132,11 +132,20 @@
         const message = document.getElementById('message-field').value;
   
         const subject = encodeURIComponent("Inquiry about Your Services");
-        const body = encodeURIComponent(`Hello,%0D%0A%0D%0AMy name is ${name}.%0D%0A%0D%0AI would like to learn more about your services.%0D%0A%0D%0A${message}%0D%0A%0D%0AThank you,%0D%0A${name}`);
+        const bodyText = `Hello,
 
-        const mailtoLink = `mailto:mail@dwcinfra.com?subject=${subject}&body=${body}`;
-  
-        window.location.href = mailtoLink;
+My name is ${name}.
+
+I would like to learn more about your services.
+
+${message}
+
+Thank you,
+${name}`;
+
+      const body = encodeURIComponent(bodyText);
+      const mailtoLink = `mailto:mail@dwcinfra.com?subject=Inquiry about Your Services&body=${body}`;
+      window.location.href = mailtoLink;
       });
     </script>
   </body>
