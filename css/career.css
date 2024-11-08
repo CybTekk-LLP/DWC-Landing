@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Geologica", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  max-inline-size: 1280px;
+  inline-size: 90vw;
+  margin-inline: auto;
+  padding-block-start: 160px;
+}
+
+header {
+  text-align: center;
+  margin-block-end: 100px;
+}
+
+.section-one {
+  text-align: center;
+  margin-block-end: 2rem;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+}
+
+.subheading .email {
+  display: flex;
+  flex-direction: column;
+  color: #030303;
+  text-decoration: none;
+
+}
+
+
+
+.job-subheading {
+  margin-block: 1.5rem;
+  list-style: none;
+}
+
+.job-subheading li .job-points {
+  padding-inline-start: 2.5rem;
+  list-style: disc;
+}
