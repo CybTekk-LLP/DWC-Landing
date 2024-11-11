@@ -24,6 +24,9 @@ main .top-section .top-img {
   filter: grayscale(1);
   transition: all 0.6s ease;
   border-radius: 20px;
+  @media screen and (width < 768px) {
+    filter: grayscale(0);
+  }
 }
 
 main .top-section .top-img:hover {
