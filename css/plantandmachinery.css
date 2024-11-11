@@ -16,7 +16,7 @@ main {
   padding-block-start: 160px;
 }
 
-header {
+.heading {
   text-align: center;
   margin-block-end: 3rem;
 }

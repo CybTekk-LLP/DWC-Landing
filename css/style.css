@@ -22,6 +22,9 @@ navbar-component {
 h1{
   text-transform: uppercase;
 }
+h2{
+  text-transform: uppercase;
+}
 @media screen and (width < 768px) {
   section {
     text-align: center;
