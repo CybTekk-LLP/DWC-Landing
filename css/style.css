@@ -22,3 +22,11 @@ navbar-component {
 h1{
   text-transform: uppercase;
 }
+@media screen and (width < 768px) {
+  section {
+    text-align: center;
+  }
+  main.careers section ul li {
+    text-align: start !important;
+  }
+}

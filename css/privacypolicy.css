@@ -1,0 +1,30 @@
+main {
+    max-inline-size: 1280px;
+    inline-size: 90vw;
+    margin-inline: auto;
+    padding-block-start: 160px;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .hero p {
+    max-inline-size: 951px;
+    font-size: 1.75rem;
+    margin-inline: auto;
+  }
+  
+  .features {
+    margin-block: 180px;
+  }
+  
+  .features .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    @media screen and (width < 768px) {
+      grid-template-columns: auto;
+    }
+  }
+  

@@ -24,10 +24,9 @@ export class InfrastructureComponent extends HTMLElement {
     const style = document.createElement("style");
     style.textContent = `
             p {
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 inline-size: 100%;
                 line-height: 2;
-                font-size: clamp(1.25rem, 0.8356rem + 1.768vw, 2.25rem);
+                font-size: clamp(1rem, 0.482rem + 2.2099vw, 2.25rem);
                 transition: all 0.3s ease;
             }
 

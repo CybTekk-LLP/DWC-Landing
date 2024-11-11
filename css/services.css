@@ -12,6 +12,9 @@ main h1 {
 
 .spacer {
   block-size: 93px;
+  @media screen and (width < 768px) {
+    block-size: 70px;
+  }
 }
 
 .service-two {

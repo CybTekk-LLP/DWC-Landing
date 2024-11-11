@@ -85,8 +85,8 @@ a-scene {
   content: "";
   background-image: repeating-linear-gradient(
     -45deg,
-    #FFE11A,
-    #FFE11A 20px,
+    #ffe11a,
+    #ffe11a 20px,
     black 20px,
     black 40px
   );
@@ -97,8 +97,9 @@ a-scene {
   margin-block-start: 50vh;
   z-index: -1;
   transition: all 1.6s ease;
+  opacity: 0.2;
 }
-body:has(#model-text:hover) #landing .model-container::after{
+body:has(#model-text:hover) #landing .model-container::after {
   filter: grayscale(0) contrast(1);
 }
 
@@ -146,6 +147,9 @@ body:has(#model-text:hover) #landing .model-container::after{
   gap: 45px;
   justify-content: center;
   align-items: center;
+}
+.a-modal {
+  display: none;
 }
 
 :target .cards {
