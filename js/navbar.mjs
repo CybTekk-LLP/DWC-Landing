@@ -342,7 +342,7 @@ monotone-shape {
                         <li><a href="./careers.html#junior-engineers"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Junior Engineers (Civil)"></monotone-shape>Junior Engineers (Civil)</a></li>
                         <li><a href="./careers.html#billing-and-estimation-engineer"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Billing and Estimation Engineers"></monotone-shape>Billing and Estimation Engineers</a></li>
+                                    text="Billing & Estimation Engineers"></monotone-shape>Billing & Estimation Engineers</a></li>
                         <li><a href="./careers.html"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="More"></monotone-shape>More</a></li>
                     </ul>
