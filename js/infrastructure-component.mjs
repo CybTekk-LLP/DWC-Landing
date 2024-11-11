@@ -46,6 +46,15 @@ export class InfrastructureComponent extends HTMLElement {
                 filter: grayscale(0) saturate(1) contrast(1);
                 scale: 2.6;
             }
+            @media screen and (width < 768px) {
+                span {
+                    display: none;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: normal;
+                }
+            }
         `;
 
     shadow.appendChild(style);
