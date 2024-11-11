@@ -17,6 +17,8 @@ body {
   font-style: normal;
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
+  inline-size: 100dvw;
+  overflow-x: hidden;
 }
 
 main {
@@ -55,7 +57,7 @@ section {
 a-scene {
   transition: all 2s ease, opacity 0.1s ease;
   filter: grayscale(1) contrast(2) brightness(2);
-  translate: 0 -10vh;
+  translate: 0 -20vh;
 }
 
 a-scene.color {
