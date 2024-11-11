@@ -68,6 +68,11 @@ export class DwcProjectCard extends HTMLElement {
           .container:hover img:last-of-type {
               rotate: 360deg;
           }
+          @media screen and (width < 768px) {
+            .container img:nth-of-type(2) {
+                filter: grayscale(0);
+            }
+          }
         `;
 
     // Attach the elements to the shadow DOM

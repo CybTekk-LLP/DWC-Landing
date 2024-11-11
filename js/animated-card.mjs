@@ -75,6 +75,9 @@ export class AnimatedCard extends HTMLElement {
                 p {
                     inline-size: 100%;
                 }
+                article.animate .image-container img:last-of-type{
+                    filter: grayscale(0) contrast(1) saturate(1);
+                }
             }
 
             article.animate .image-container img:last-of-type{
