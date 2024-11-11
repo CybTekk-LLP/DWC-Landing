@@ -198,7 +198,8 @@ body:has(#model-text:hover) #landing .model-container::after {
     -45deg,
     white,
     #2c2c2d 1px,
-    white 3px
+    white 2px,
+    white 4px
   );
 }
 
