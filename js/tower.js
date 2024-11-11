@@ -9,6 +9,27 @@ function rotateModel(scrollPos) {
   model.setAttribute("rotation", `0 ${rotationY} 0`);
   lastKnownScrollPosition = scrollPos;
 }
+if (DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission === "function") {
+  // For iOS 13+ where permission is required
+  DeviceMotionEvent.requestPermission()
+      .then(permissionState => {
+          if (permissionState === 'granted') {
+              window.addEventListener('devicemotion', handleMotion);
+          } else {
+              // Fallback if permission is not granted
+              handleNoMotionSupport();
+          }
+      })
+      .catch(console.error);
+} else {
+  // No motion support on this device or browser
+  handleNoMotionSupport();
+}
+
+function handleNoMotionSupport() {
+  console.log("Device motion access not available.");
+  // Implement a fallback experience here
+}
 
 document.addEventListener("scroll", () => {
   if (!ticking) {

@@ -283,7 +283,7 @@ monotone-shape {
                                     text="Infrastructure Development"></monotone-shape>Infrastructure Development</a>
                         </li>
                         <li><a href="./services.html#design-build"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Design & Build"></monotone-shape>Design & Build</a></li>
+                                    text="Design & Build"></monotone-shape>Design and Build</a></li>
                         <li><a href="./services.html#joint-venture-model"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Joint Venture Model"></monotone-shape>Joint Venture Model</a></li>
                     </ul>
