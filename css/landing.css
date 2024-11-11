@@ -77,6 +77,7 @@ a-scene {
   pointer-events: none;
   position: fixed;
   inset-block-end: 0;
+  z-index: -1;
 }
 
 .model-container {
