@@ -57,7 +57,7 @@ section {
 a-scene {
   transition: all 2s ease, opacity 0.1s ease;
   filter: grayscale(1) contrast(2) brightness(2);
-  translate: 0 -20vh;
+  translate: 0 calc(10vh + 50px);
 }
 
 a-scene.color {
@@ -76,11 +76,11 @@ a-scene {
   aspect-ratio: 1/1;
   pointer-events: none;
   position: fixed;
+  inset-block-end: 0;
 }
 
 .model-container {
   display: flex;
-  position: relative;
   justify-content: center;
 }
 
