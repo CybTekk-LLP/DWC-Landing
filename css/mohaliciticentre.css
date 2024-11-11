@@ -49,8 +49,9 @@ section .top-section {
 }
 section .bottom-img{
     text-align: center;
-    
 }
 section .bottom-img img{
     inline-size: 100%;
+    border-radius: 20px;
+    image-rendering: optimizeQuality;
 }
