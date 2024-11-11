@@ -112,7 +112,7 @@ export class Footer extends HTMLElement {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
-  margin-block-start: 45px;
+  margin-block-start: 30px;
   font-size: 1rem;
   color: var(--secondary);
   gap: 20px;

@@ -36,10 +36,12 @@ section {
 
 .md-sys-filled-button {
   padding: 10px 40px;
+  min-inline-size: 180px;
 }
 
 .md-sys-outline-button {
   padding: 10px 30px;
+  min-inline-size: 180px;
 }
 
 .buttons {
