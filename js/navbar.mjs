@@ -174,7 +174,8 @@ monotone-shape {
     nav {
         position: relative;
         display: block;
-        font-size: 16px;
+        font-size: 26px;
+        text-transform: uppercase;
         block-size: 100dvh;
         background-color: #fafffda9;
         -webkit-backdrop-filter: blur(20px);
