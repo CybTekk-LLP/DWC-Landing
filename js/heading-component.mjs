@@ -39,8 +39,9 @@ export class HeadingComponent extends HTMLElement {
         position: relative;
         font-family: Geologica;
         font-size: ${size}px;
-        top: 40px;
+        inset-block-start: 40px;
         font-weight: bold;
+        opacity: 0;
         @media screen and (width < 768px) {
           font-size: ${sizeMobile}px;
         } 

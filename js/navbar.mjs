@@ -32,14 +32,14 @@ header img {
 nav {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin-block-start: 20px;
     background-color: #fafffda9;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
-    padding-block-end: 40px;
+    padding-block-end: 35px;
     color: #525253;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -174,7 +174,7 @@ monotone-shape {
     nav {
         position: relative;
         display: block;
-        font-size: 12px;
+        font-size: 16px;
         block-size: 100dvh;
         background-color: #fafffda9;
         -webkit-backdrop-filter: blur(20px);
