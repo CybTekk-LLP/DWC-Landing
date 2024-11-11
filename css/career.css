@@ -59,6 +59,9 @@ main {
   scroll-margin-block-start: 100px;
   animation: fade 3s ease forwards;
 }
+.job-section{
+  padding: 8px;
+}
 
 @keyframes fade {
   0% {
