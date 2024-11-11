@@ -10,6 +10,11 @@ function rotateModel(scrollPos) {
   lastKnownScrollPosition = scrollPos;
 }
 
+function handleNoMotionSupport() {
+  console.log("Device motion access not available.");
+  // Implement a fallback experience here
+}
+
 document.addEventListener("scroll", () => {
   if (!ticking) {
     window.requestAnimationFrame(() => {

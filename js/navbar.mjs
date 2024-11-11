@@ -32,14 +32,14 @@ header img {
 nav {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin-block-start: 20px;
     background-color: #fafffda9;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
-    padding-block-end: 40px;
+    padding-block-end: 35px;
     color: #525253;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -174,7 +174,7 @@ monotone-shape {
     nav {
         position: relative;
         display: block;
-        font-size: 12px;
+        font-size: 16px;
         block-size: 100dvh;
         background-color: #fafffda9;
         -webkit-backdrop-filter: blur(20px);
@@ -223,7 +223,18 @@ monotone-shape {
         inset-inline-end: 0;
         inset-block-start: 0;
         margin: 20px;
-
+    }
+    header:has(input:not(:checked))::after{
+        position: absolute;
+        content: "";
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        inline-size: 100%;
+        block-size: 80px;
+        background: #ffffff7a;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        z-index: -1;
     }
 
     label input {
@@ -283,7 +294,7 @@ monotone-shape {
                                     text="Infrastructure Development"></monotone-shape>Infrastructure Development</a>
                         </li>
                         <li><a href="./services.html#design-build"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Design & Build"></monotone-shape>Design & Build</a></li>
+                                    text="Design & Build"></monotone-shape>Design and Build</a></li>
                         <li><a href="./services.html#joint-venture-model"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Joint Venture Model"></monotone-shape>Joint Venture Model</a></li>
                     </ul>
@@ -342,7 +353,7 @@ monotone-shape {
                         <li><a href="./careers.html#junior-engineers"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Junior Engineers (Civil)"></monotone-shape>Junior Engineers (Civil)</a></li>
                         <li><a href="./careers.html#billing-and-estimation-engineer"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Billing and Estimation Engineers"></monotone-shape>Billing and Estimation Engineers</a></li>
+                                    text="Billing & Estimation Engineers"></monotone-shape>Billing & Estimation Engineers</a></li>
                         <li><a href="./careers.html"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="More"></monotone-shape>More</a></li>
                     </ul>

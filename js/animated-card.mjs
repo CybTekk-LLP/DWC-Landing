@@ -48,6 +48,7 @@ export class AnimatedCard extends HTMLElement {
                 max-inline-size: 640px;
                 block-size: 404px;
                 border-radius: 35px;
+                opacity: 0;
                 transition: all 0.6s ease;
                 filter: grayscale(1) contrast(1.2) saturate(0.3);
             }

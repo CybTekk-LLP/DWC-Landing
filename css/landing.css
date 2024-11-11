@@ -17,6 +17,8 @@ body {
   font-style: normal;
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
+  inline-size: 100dvw;
+  overflow-x: hidden;
 }
 
 main {
@@ -32,6 +34,11 @@ section {
 
 .container {
   text-align: center;
+  background-color: #ffffff7a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .md-sys-filled-button {
@@ -55,7 +62,7 @@ section {
 a-scene {
   transition: all 2s ease, opacity 0.1s ease;
   filter: grayscale(1) contrast(2) brightness(2);
-  translate: 0 -10vh;
+  translate: 0 calc(10vh + 50px);
 }
 
 a-scene.color {
@@ -74,11 +81,12 @@ a-scene {
   aspect-ratio: 1/1;
   pointer-events: none;
   position: fixed;
+  inset-block-end: 0;
+  z-index: -1;
 }
 
 .model-container {
   display: flex;
-  position: relative;
   justify-content: center;
 }
 
@@ -198,7 +206,8 @@ body:has(#model-text:hover) #landing .model-container::after {
     -45deg,
     white,
     #2c2c2d 1px,
-    white 3px
+    white 2px,
+    white 4px
   );
 }
 
