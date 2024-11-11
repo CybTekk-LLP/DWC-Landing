@@ -34,6 +34,11 @@ section {
 
 .container {
   text-align: center;
+  background-color: #ffffff7a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .md-sys-filled-button {

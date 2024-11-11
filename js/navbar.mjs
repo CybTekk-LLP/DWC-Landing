@@ -223,7 +223,18 @@ monotone-shape {
         inset-inline-end: 0;
         inset-block-start: 0;
         margin: 20px;
-
+    }
+    header:has(input:not(:checked))::after{
+        position: absolute;
+        content: "";
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        inline-size: 100%;
+        block-size: 80px;
+        background: #ffffff7a;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        z-index: -1;
     }
 
     label input {
