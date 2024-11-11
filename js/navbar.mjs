@@ -39,6 +39,7 @@ nav {
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
+    padding-block-end: 40px;
     color: #525253;
     text-decoration: none;
     transition: all 0.3s ease;
