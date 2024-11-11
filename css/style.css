@@ -18,3 +18,7 @@ navbar-component {
   position: fixed;
   z-index: 3;
 }
+
+h1{
+  text-transform: uppercase;
+}
