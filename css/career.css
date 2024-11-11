@@ -40,8 +40,6 @@ main {
 
 }
 
-
-
 .job-subheading {
   margin-block: 1.5rem;
   list-style: none;
@@ -53,4 +51,25 @@ main {
 }
 .career-job{
   margin-block-end: 180px;
+}
+
+:target {
+  border: 2px solid #2c2c2d;
+  border-radius: 10px;
+  scroll-margin-block-start: 100px;
+  animation: fade 3s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    border: 2px solid #2c2c2d;
+  }
+
+  90% {
+    border: 2px solid #2c2c2d;
+  }
+
+  100% {
+    border: 2px solid transparent;
+  }
 }
