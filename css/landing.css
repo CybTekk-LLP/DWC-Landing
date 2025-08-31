@@ -144,11 +144,7 @@ body:has(#model-text:hover) #landing .model-container::after {
   scroll-margin-block-start: 100px; /* default for desktop */
 }
 
-@media (max-width: 768px) {
-  #projects {
-    scroll-margin-block-start: 140px; /* increase offset on mobile */
-  }
-}
+
 
 
 .card {
