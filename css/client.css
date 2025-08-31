@@ -5,12 +5,27 @@ main {
   padding-block-start: 160px;
 }
 
-main section .cards {
+/* main section .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-block-end: 80px;
+} */
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 80px;
+}
+
+.cards .portfolio{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
 }
 
 main section h1 {
@@ -20,7 +35,7 @@ main section h1 {
 
 main section img {
   inline-size: 100%;
-  max-inline-size: 600px;
+  max-inline-size: 1200px;
   height: 100%;
   object-fit: contain;
   image-rendering: optimizeSpeed;

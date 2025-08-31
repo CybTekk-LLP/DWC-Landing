@@ -322,15 +322,91 @@ monotone-shape {
                     </ul>
                 </li>
                 <li>
-                    <span><a href="./clients.html">Clients</a></span>
+                    <span><a href="./clients.html">Portfolio</a></span>
                     <ul>
-                        <li><a href="./clients.html#mohali-citi-centre"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Mohali Citi Centre"></monotone-shape>Mohali Citi Centre</a></li>
-                        <li><a href="./clients.html#marbella-grand"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Marbella Grand"></monotone-shape>Marbella Grand</a></li>
-                        <li><a href="./clients.html#sps-realtors"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="SPS Realtors"></monotone-shape>SPS Realtors</a></li>
-                        <li><a href="./clients.html#vrs"><monotone-shape height="20px" width="20px" shape-id="" text="VRS"></monotone-shape>VRS</a>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Highland Lifespaces"></monotone-shape>
+                            Highland Lifespaces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Mohali Citi Centre"></monotone-shape>
+                            Mohali Citi Centre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Apollo Hospitals"></monotone-shape>
+                            Apollo Hospitals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Sanathan Textiles"></monotone-shape>
+                            Sanathan Textiles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Prisma Plaza"></monotone-shape>
+                            Prisma Plaza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Abbott"></monotone-shape>
+                            Abbott
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="ALC"></monotone-shape>
+                            ALC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="JLPL"></monotone-shape>
+                            JLPL
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="SPS Realty"></monotone-shape>
+                            SPS Realty
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="TCS"></monotone-shape>
+                            TCS (Tata Consultancy Services)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="SBI"></monotone-shape>
+                            State Bank of India
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="VRS"></monotone-shape>
+                            VRS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portfolio">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Curo One"></monotone-shape>
+                            Curo One
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./clients.html#portofilo">
+                            <monotone-shape height="20px" width="20px" shape-id="" text="Prisma City"></monotone-shape>
+                            Prisma City
+                            </a>
                         </li>
                     </ul>
                 </li>
