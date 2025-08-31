@@ -216,3 +216,40 @@ body:has(#model-text:hover) #landing .model-container::after {
     text-align: center;
   }
 }
+
+.statistics {
+  position: relative;
+  scroll-margin-block-start: 100px;
+  /* margin-top: 20vh;
+  @media screen and (width < 768px) {
+    margin-block: 20vh;
+  } */
+   margin-block: 180px;
+}
+
+.statistics .all-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Mobile view: stack in a column and center */
+@media (max-width: 768px) {
+  .statistics .all-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.statistics .number-card h1 {
+  font-size: clamp(1.875rem, 1.5rem + 1vw, 2.5rem);
+}
+
+
+.statistics .number-card p {
+  font-size: 1rem;
+}

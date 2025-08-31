@@ -286,6 +286,7 @@ monotone-shape {
                         <li><a href="./leadership.html"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Leadership"></monotone-shape>Leadership</a></li>
                         <li><a href="./csr.html"><monotone-shape height="20px" width="20px" shape-id="" text="CSR"></monotone-shape>CSR</a></li>
+                        <li><a href="./our-team.html"><monotone-shape height="20px" width="20px" shape-id="" text="Our team"></monotone-shape>Our Team</a></li>
                     </ul>
                 </li>
                 <li>

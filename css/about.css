@@ -51,6 +51,15 @@ main {
   gap: 40px;
 }
 
+/* Mobile view: stack in a column and center */
+@media (max-width: 768px) {
+  .numbers .all-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .numbers .number-card h1 {
   font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem);
 }
