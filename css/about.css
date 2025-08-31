@@ -61,7 +61,7 @@ main {
 }
 
 .numbers .number-card h1 {
-  font-size: clamp(1.875rem, 1.4088rem + 1.989vw, 3rem);
+  font-size: clamp(1.875rem, 1.5rem + 1vw, 2.5rem);
 }
 
 .numbers .number-card p {
