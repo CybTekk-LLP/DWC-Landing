@@ -29,9 +29,12 @@
     gap: 10px;
     flex-wrap: wrap;
   }
+
+  #projects:first-child{
+    margin-block-end: 180px;
+  }
   
   #projects {
-    margin-block-end: 180px;
     position: relative;
     scroll-margin-block-start: 100px;
   }
