@@ -141,8 +141,15 @@ body:has(#model-text:hover) #landing .model-container::after {
 
 #projects {
   position: relative;
-  scroll-margin-block-start: 100px;
+  scroll-margin-block-start: 100px; /* default for desktop */
 }
+
+@media (max-width: 768px) {
+  #projects {
+    scroll-margin-block-start: 140px; /* increase offset on mobile */
+  }
+}
+
 
 .card {
   text-align: center;
