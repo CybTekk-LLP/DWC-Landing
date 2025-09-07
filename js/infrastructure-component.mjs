@@ -9,11 +9,11 @@ export class InfrastructureComponent extends HTMLElement {
     const container = document.createElement("p");
     container.innerHTML = `
             DWC Infra transforms traditional
-            <span><img src="./images/1.png" alt="" height="52px"></span>
+            <span><img src="./images/Projects/MCC4-2.jpeg" alt="" height="52px"></span>
             construction with innovative
-            <span><img src="./images/2.png" alt="" height="52px"></span>
+            <span><img src="./images/Projects/Highlandpark-1.jpeg" alt="" height="52px"></span>
             designs that prioritize functionality and aesthetics. Our projects enhance community landscapes while ensuring quality and sustainability, effectively addressing the evolving needs of modern
-            <span><img src="./images/3.png" alt="" height="52px"></span>
+            <span><img src="./images/Projects/Apollohospital.jpeg" alt="" height="52px"></span>
             businesses.
         `;
 

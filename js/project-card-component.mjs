@@ -31,49 +31,53 @@ export class DwcProjectCard extends HTMLElement {
     // Apply styles
     const style = document.createElement("style");
     style.textContent = `
-          .container {
-              position: relative;
-              display: inline-block;
-          }
-    
-          img:first-of-type {
-              position: absolute;
-              inset-inline-start: -2px;
-              inset-block-start: 20px;
-              transition: all 0.3s ease;
-          }
-    
-          .container:hover img:first-of-type {
-              translate: -16px 0;
-          }
-    
-          img:nth-of-type(2) {
-              filter: grayscale(1);
-              transition: all 1s ease;
-              inline-size: 100%;
-              block-size: auto;
-          }
-    
-          .container:hover img:nth-of-type(2) {
-              filter: grayscale(0);
-          }
-    
-          img:last-of-type {
-              position: absolute;
-              inset-inline-end: 20px;
-              inset-block-end: 20px;
-              transition: all 0.6s ease;
-          }
-    
-          .container:hover img:last-of-type {
-              rotate: 360deg;
-          }
-          @media screen and (width < 768px) {
-            .container img:nth-of-type(2) {
-                filter: grayscale(0);
-            }
-          }
-        `;
+  .container {
+      position: relative;
+      display: inline-block;
+  }
+
+  img:first-of-type {
+      position: absolute;
+      inset-inline-start: -2px;
+      inset-block-start: 20px;
+      transition: all 0.3s ease;
+  }
+
+  .container:hover img:first-of-type {
+      translate: -16px 0;
+  }
+
+  img:nth-of-type(2) {
+      filter: grayscale(1);
+      transition: all 1s ease;
+      inline-size: 100%;
+      block-size: 300px; /* force a fixed height */
+      object-fit: cover; /* crop instead of squish */
+      border-radius: 20px; /* rounded corners */
+  }
+
+  .container:hover img:nth-of-type(2) {
+      filter: grayscale(0);
+  }
+
+  img:last-of-type {
+      position: absolute;
+      inset-inline-end: 20px;
+      inset-block-end: 20px;
+      transition: all 0.6s ease;
+  }
+
+  .container:hover img:last-of-type {
+      rotate: 360deg;
+  }
+
+  @media screen and (width < 768px) {
+    .container img:nth-of-type(2) {
+        filter: grayscale(0);
+    }
+  }
+`;
+
 
     // Attach the elements to the shadow DOM
     shadow.appendChild(style);
