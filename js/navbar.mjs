@@ -412,12 +412,6 @@ monotone-shape {
                 </li>
                 <li>
                     <span><a href="./#projects">Projects</a></span>
-                    <ul>
-                        <li><a href="./sps-helios.html"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="SPS Helios"></monotone-shape>SPS Helios</a></li>
-                        <li><a href="./mohali-citi-centre.html"><monotone-shape height="20px" width="20px" shape-id=""
-                                    text="Mohali Citi Centre"></monotone-shape>Mohali Citi Centre</a></li>
-                    </ul>
                 </li>
                 <li>
                     <span><a href="./careers.html">Careers</a></span>
