@@ -431,7 +431,7 @@ monotone-shape {
                     </ul>
                 </li>
                 <li>
-                    <span><a href="./plant-and-machinery.html">Plants & Machinery</a></span>
+                    <span><a href="./plant-and-machinery.html">Infrastructure</a></span>
                     <ul>
                         <li><a href="./plant-and-machinery.html#tower-crane"><monotone-shape height="20px" width="20px" shape-id=""
                                     text="Tower Crane"></monotone-shape>Tower Crane</a></li>
