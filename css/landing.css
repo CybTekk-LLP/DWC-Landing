@@ -141,7 +141,7 @@ body:has(#model-text:hover) #landing .model-container::after {
 
 #projects {
   position: relative;
-  scroll-margin-block-start: 100px; /* default for desktop */
+  /* scroll-margin-block-start: 100px; default for desktop */
 }
 
 .card {
