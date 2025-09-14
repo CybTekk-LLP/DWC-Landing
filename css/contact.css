@@ -18,12 +18,12 @@ main .top-section {
 
 main .top-section .top-img {
   inline-size: 100%;
-  max-inline-size: 1030px;
+  max-inline-size: 1280px;
   block-size: 565px;
   object-fit: cover;
   filter: grayscale(1);
   transition: all 0.6s ease;
-  border-radius: 20px;
+  border-radius: 0px;
   @media screen and (width < 768px) {
     filter: grayscale(0);
   }

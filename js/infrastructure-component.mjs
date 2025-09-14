@@ -38,7 +38,7 @@ export class InfrastructureComponent extends HTMLElement {
             span img {
                 filter: grayscale(1) saturate(0) contrast(1.3);
                 transition: all 0.225s ease-out;
-                border-radius: 12px;
+                border-radius: 0px;
                 translate: 0 10px;
             }
 
