@@ -53,7 +53,8 @@ export class DwcProjectCard extends HTMLElement {
       inline-size: 100%;
       block-size: 300px; /* force a fixed height */
       object-fit: cover; /* crop instead of squish */
-      border-radius: 20px; /* rounded corners */
+      border-radius: 0px; /* rounded corners */
+      aspect-ratio: 1/1;
   }
 
   .container:hover img:nth-of-type(2) {
